@@ -1,0 +1,30 @@
+ZAGADKA LOGICZNA
+==================================================
+
+Jest 5 pozycji (ponumerowanych od 1 do 5).
+Każda pozycja ma unikalną kombinację:
+  - Osoba: Alicja, Bartek, Karolina, Dawid, Ewa
+  - Kolor: Czerwony, Niebieski, Zielony, Żółty, Biały
+  - Napój: Kawa, Herbata, Mleko, Sok, Woda
+  - Zwierzę: Pies, Kot, Ptak, Ryba, Królik
+  - Zawód: Lekarz, Inżynier, Nauczyciel, Artysta, Prawnik
+
+WSKAZÓWKI:
+1. Dawid ma Kota.
+2. Bartek pije Herbatę.
+3. Bartek ma Ptaka.
+4. Osoba na pozycji 3 NIE pije Kawy.
+5. Osoba która pije Mleko mieszka na środkowej pozycji (pozycja 3).
+6. Nauczyciel mieszka w Czerwonym domu.
+7. Osoba na pozycji 5 ma Psa.
+8. Karolina ma Rybę.
+9. Karolina pije Mleko.
+10. Ewa pije Kawę.
+11. Artysta mieszka w Zielonym domu.
+12. Biały dom jest bezpośrednio na lewo od Niebieskiego domu.
+13. Dawid mieszka na pozycji 1.
+14. Prawnik mieszka dokładnie dwie pozycje na lewo od Nauczyciela.
+15. Ewa ma Królika.
+16. Lekarz mieszka w Białym domu.
+
+PYTANIE: Kto pije Wodę?

@@ -1,0 +1,18 @@
+{
+  "experiment": "Language-based reasoning accuracy",
+  "puzzle_type": "Einstein-style logic puzzle",
+  "results": {
+    "English": {
+      "grid_accuracy_percent": 100.0,
+      "final_answer_correct": true
+    },
+    "Polish": {
+      "grid_accuracy_percent": 40.0,
+      "final_answer_correct": true
+    },
+    "Chinese": {
+      "grid_accuracy_percent": 92.0,
+      "final_answer_correct": false
+    }
+  }
+}

@@ -1,0 +1,30 @@
+LOGIC PUZZLE
+==================================================
+
+There are 5 positions (numbered 1 to 5).
+Each position has a unique combination of:
+  - Person: Alice, Bob, Carol, David, Emma
+  - Color: Red, Blue, Green, Yellow, White
+  - Drink: Coffee, Tea, Milk, Juice, Water
+  - Pet: Dog, Cat, Bird, Fish, Rabbit
+  - Profession: Doctor, Engineer, Teacher, Artist, Lawyer
+
+CLUES:
+1. David has a Cat.
+2. Bob drinks Tea.
+3. Bob has a Bird.
+4. The person in position 3 does NOT drink Coffee.
+5. The person who drinks Milk lives in the middle position (position 3).
+6. The Teacher lives in the Red house.
+7. The person in position 5 has a Dog.
+8. Carol has a Fish.
+9. Carol drinks Milk.
+10. Emma drinks Coffee.
+11. The Artist lives in the Green house.
+12. The White house is immediately to the left of the Blue house.
+13. The David lives in position 1.
+14. The Lawyer lives exactly two positions to the left of the Teacher.
+15. Emma has a Rabbit.
+16. The Doctor lives in the White house.
+
+QUESTION: Who drinks Water?

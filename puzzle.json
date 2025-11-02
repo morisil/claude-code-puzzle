@@ -1,0 +1,96 @@
+{
+  "num_positions": 5,
+  "categories": {
+    "Person": [
+      "Alice",
+      "Bob",
+      "Carol",
+      "David",
+      "Emma"
+    ],
+    "Color": [
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow",
+      "White"
+    ],
+    "Drink": [
+      "Coffee",
+      "Tea",
+      "Milk",
+      "Juice",
+      "Water"
+    ],
+    "Pet": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Fish",
+      "Rabbit"
+    ],
+    "Profession": [
+      "Doctor",
+      "Engineer",
+      "Teacher",
+      "Artist",
+      "Lawyer"
+    ]
+  },
+  "clues": [
+    "David has a Cat.",
+    "Bob drinks Tea.",
+    "Bob has a Bird.",
+    "The person in position 3 does NOT drink Coffee.",
+    "The person who drinks Milk lives in the middle position (position 3).",
+    "The Teacher lives in the Red house.",
+    "The person in position 5 has a Dog.",
+    "Carol has a Fish.",
+    "Carol drinks Milk.",
+    "Emma drinks Coffee.",
+    "The Artist lives in the Green house.",
+    "The White house is immediately to the left of the Blue house.",
+    "The David lives in position 1.",
+    "The Lawyer lives exactly two positions to the left of the Teacher.",
+    "Emma has a Rabbit.",
+    "The Doctor lives in the White house."
+  ],
+  "solution": {
+    "Person": {
+      "1": "David",
+      "2": "Bob",
+      "3": "Carol",
+      "4": "Emma",
+      "5": "Alice"
+    },
+    "Color": {
+      "1": "Yellow",
+      "2": "Green",
+      "3": "Red",
+      "4": "White",
+      "5": "Blue"
+    },
+    "Drink": {
+      "1": "Juice",
+      "2": "Tea",
+      "3": "Milk",
+      "4": "Coffee",
+      "5": "Water"
+    },
+    "Pet": {
+      "1": "Cat",
+      "2": "Bird",
+      "3": "Fish",
+      "4": "Rabbit",
+      "5": "Dog"
+    },
+    "Profession": {
+      "1": "Lawyer",
+      "2": "Artist",
+      "3": "Teacher",
+      "4": "Doctor",
+      "5": "Engineer"
+    }
+  },
+  "question": "Who drinks Water?"
+}
