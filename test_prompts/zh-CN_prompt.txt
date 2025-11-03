@@ -1,0 +1,29 @@
+You are being tested on complex logical reasoning. Please solve the following puzzle carefully and systematically.
+
+### Chinese Version (Simplified) (中文简体版)
+
+五位研究人员——Anderson博士、Brown博士、Chen博士、Dubois博士和Evans博士——计划在一次国际会议上展示他们的研究成果。会议共有五个时间段：上午9:00、上午10:30、下午1:00、下午2:30和下午4:00。
+
+根据以下约束条件,确定每位研究人员在哪个时间段进行演讲:
+
+1. Anderson博士必须在Brown博士之前演讲,但不能在连续的时间段。
+2. Chen博士不能在9:00或4:00演讲。
+3. Dubois博士的演讲时间恰好比Chen博士晚两个时间段。
+4. Evans博士的演讲紧接在Chen博士的演讲之后(连续时间段)。
+5. 1:00的时间段由姓氏以元音字母开头的人占据。
+6. Brown博士在下午(1:00或更晚)演讲。
+7. Anderson博士和Evans博士的演讲之间恰好有一场其他演讲。
+8. Chen博士的演讲在上午(1:00之前)进行。
+
+**问题:** 完整的日程安排是什么?请列出每个时间段及对应的研究人员。
+
+**附加挑战:** 如果Dubois博士必须取消演讲,哪位研究人员可以接替他的时间段而不违反关于他们自己日程安排的任何其他约束(不包括约束3)?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Answer both the main question AND the additional challenge
+5. Present your final answer in a clear format
+
+Please proceed with solving the puzzle.

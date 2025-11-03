@@ -1,0 +1,166 @@
+ROZWIĄZANIE PUZZLE LOGICZNEGO - HARMONOGRAM KONFERENCJI NAUKOWEJ
+
+================================================================================
+ANALIZA KROK PO KROKU
+================================================================================
+
+Dane:
+- Naukowcy: Dr Anderson, Dr Brown, Dr Chen, Dr Dubois, Dr Evans
+- Przedziały czasowe: 9:00, 10:30, 13:00, 14:30, 16:00
+- Pozycje: 1, 2, 3, 4, 5 (odpowiednio)
+
+KROK 1: Określenie pozycji Dr Chen
+================================================================================
+Z ograniczenia 8: Dr Chen prezentuje rano (przed 13:00)
+  → Dr Chen może być na pozycji 1 (9:00) lub 2 (10:30)
+
+Z ograniczenia 2: Dr Chen nie może prezentować o 9:00 ani o 16:00
+  → Dr Chen NIE może być na pozycji 1 (9:00)
+
+WNIOSEK: Dr Chen jest na pozycji 2 (10:30) ✓
+
+KROK 2: Określenie pozycji Dr Evans
+================================================================================
+Z ograniczenia 4: Dr Evans prezentuje bezpośrednio po Dr Chen (w kolejnych przedziałach)
+  → Jeśli Dr Chen jest na pozycji 2, to Dr Evans jest na pozycji 3
+
+WNIOSEK: Dr Evans jest na pozycji 3 (13:00) ✓
+
+Weryfikacja z ograniczeniem 5: Przedział o 13:00 zajęty przez osobę z nazwiskiem
+zaczynającym się od samogłoski.
+  → "Evans" zaczyna się od "E" (samogłoska) ✓
+
+KROK 3: Określenie pozycji Dr Dubois
+================================================================================
+Z ograniczenia 3: Dr Dubois prezentuje dokładnie dwa przedziały czasowe po Dr Chen
+  → Jeśli Dr Chen jest na pozycji 2, to Dr Dubois jest na pozycji 4 (2 + 2 = 4)
+
+WNIOSEK: Dr Dubois jest na pozycji 4 (14:30) ✓
+
+KROK 4: Określenie pozycji Dr Anderson i Dr Brown
+================================================================================
+Pozostałe pozycje: 1 (9:00) i 5 (16:00)
+Pozostali naukowcy: Dr Anderson i Dr Brown
+
+Z ograniczenia 7: Pomiędzy Dr Anderson i Dr Evans jest dokładnie jedna inna prezentacja
+  → Dr Evans jest na pozycji 3
+  → Dr Anderson może być na pozycji 1 (z pozycją 2 pomiędzy) lub pozycji 5 (z pozycją 4 pomiędzy)
+
+PRZYPADEK A: Dr Anderson na pozycji 1 (9:00)
+  - Pomiędzy Anderson (poz. 1) a Evans (poz. 3) jest pozycja 2 (Dr Chen) ✓
+  - Dr Brown byłby na pozycji 5 (16:00)
+  - Sprawdzenie ograniczenia 6: Dr Brown o 16:00 (po południu) ✓
+  - Sprawdzenie ograniczenia 1: Anderson (poz. 1) przed Brown (poz. 5), nie w kolejnych przedziałach ✓
+
+PRZYPADEK B: Dr Anderson na pozycji 5 (16:00)
+  - Pomiędzy Evans (poz. 3) a Anderson (poz. 5) jest pozycja 4 (Dr Dubois) ✓
+  - Dr Brown byłby na pozycji 1 (9:00)
+  - Sprawdzenie ograniczenia 6: Dr Brown o 9:00 (rano, NIE po południu) ✗
+  - Sprawdzenie ograniczenia 1: Anderson (poz. 5) NIE jest przed Brown (poz. 1) ✗
+
+WNIOSEK: Dr Anderson na pozycji 1 (9:00), Dr Brown na pozycji 5 (16:00) ✓
+
+================================================================================
+OSTATECZNA WERYFIKACJA WSZYSTKICH OGRANICZEŃ
+================================================================================
+
+Proponowany harmonogram:
+  9:00 (poz. 1)  → Dr Anderson
+  10:30 (poz. 2) → Dr Chen
+  13:00 (poz. 3) → Dr Evans
+  14:30 (poz. 4) → Dr Dubois
+  16:00 (poz. 5) → Dr Brown
+
+Sprawdzenie:
+✓ Ograniczenie 1: Anderson (poz. 1) przed Brown (poz. 5), nie kolejne (3 sloty pomiędzy)
+✓ Ograniczenie 2: Chen na pozycji 2 (10:30), nie 9:00 ani 16:00
+✓ Ograniczenie 3: Dubois (poz. 4) dwa sloty po Chen (poz. 2)
+✓ Ograniczenie 4: Evans (poz. 3) bezpośrednio po Chen (poz. 2)
+✓ Ograniczenie 5: 13:00 (poz. 3) zajęte przez Evans (zaczyna się od "E", samogłoska)
+✓ Ograniczenie 6: Brown na pozycji 5 (16:00, po południu)
+✓ Ograniczenie 7: Jeden slot (Chen, poz. 2) pomiędzy Anderson (poz. 1) a Evans (poz. 3)
+✓ Ograniczenie 8: Chen na pozycji 2 (10:30, rano)
+
+WSZYSTKIE OGRANICZENIA SPEŁNIONE!
+
+================================================================================
+ODPOWIEDŹ NA GŁÓWNE PYTANIE
+================================================================================
+
+KOMPLETNY HARMONOGRAM:
+  9:00  → Dr Anderson
+  10:30 → Dr Chen
+  13:00 → Dr Evans
+  14:30 → Dr Dubois
+  16:00 → Dr Brown
+
+================================================================================
+DODATKOWE WYZWANIE
+================================================================================
+
+Pytanie: Jeśli Dr Dubois musi odwołać swoją prezentację, który naukowiec mógłby
+zająć jego miejsce (14:30) bez naruszenia ograniczeń?
+
+Analiza każdego naukowca na pozycji 4 (14:30):
+
+DR ANDERSON na 14:30:
+  - Ograniczenie 1: Anderson przed Brown i nie kolejne
+  - Jeśli Anderson na poz. 4 (14:30), Brown na poz. 5 (16:00) → KOLEJNE pozycje ✗
+  - WYKLUCZONE
+
+DR CHEN na 14:30:
+  - Ograniczenie 8: Chen musi prezentować rano (przed 13:00)
+  - 14:30 jest po południu ✗
+  - WYKLUCZONE
+
+DR EVANS na 14:30:
+  - Ograniczenie 4: Evans musi być bezpośrednio po Chen
+  - Chen na poz. 2 (10:30), więc Evans musi być na poz. 3 (13:00), nie 4 ✗
+  - Ograniczenie 7: Jeden slot pomiędzy Anderson a Evans
+  - Anderson na poz. 1, Evans na poz. 4 → DWA sloty pomiędzy (poz. 2 i 3) ✗
+  - WYKLUCZONE
+
+DR BROWN na 14:30:
+  - Ograniczenie 1: Anderson przed Brown, nie kolejne
+    → Anderson poz. 1 (9:00), Brown poz. 4 (14:30) → nie kolejne (poz. 2, 3 pomiędzy) ✓
+  - Ograniczenie 6: Brown po południu
+    → 14:30 jest po południu ✓
+  - WSZYSTKIE OGRANICZENIA SPEŁNIONE!
+
+Nowy harmonogram (bez Dubois):
+  9:00  → Dr Anderson
+  10:30 → Dr Chen
+  13:00 → Dr Evans
+  14:30 → Dr Brown
+  16:00 → [wolny slot]
+
+Weryfikacja wszystkich ograniczeń (z wyłączeniem 3):
+✓ Ograniczenie 1: Anderson (poz. 1) przed Brown (poz. 4), nie kolejne
+✓ Ograniczenie 2: Chen nie o 9:00 ani 16:00
+✓ Ograniczenie 4: Evans bezpośrednio po Chen
+✓ Ograniczenie 5: 13:00 zajęte przez Evans (samogłoska)
+✓ Ograniczenie 6: Brown o 14:30 (po południu)
+✓ Ograniczenie 7: Jeden slot (Chen) pomiędzy Anderson a Evans
+✓ Ograniczenie 8: Chen o 10:30 (rano)
+
+================================================================================
+ODPOWIEDŹ NA DODATKOWE WYZWANIE
+================================================================================
+
+DR BROWN mógłby zająć miejsce Dr Dubois na 14:30 bez naruszenia żadnych
+innych ograniczeń dotyczących własnego harmonogramu.
+
+================================================================================
+PODSUMOWANIE KOŃCOWE
+================================================================================
+
+GŁÓWNY HARMONOGRAM:
+  9:00  → Dr Anderson
+  10:30 → Dr Chen
+  13:00 → Dr Evans
+  14:30 → Dr Dubois
+  16:00 → Dr Brown
+
+ZASTĘPSTWO DLA DR DUBOIS: Dr Brown
+
+================================================================================

@@ -1,0 +1,31 @@
+{
+  "test_name": "Polish Reasoning Efficiency Test",
+  "model": "Claude Sonnet 4.5",
+  "timestamp": "2025-11-03T23:20:00.915944",
+  "languages": [
+    {
+      "language": "English",
+      "language_code": "en",
+      "prompt_length": 1644,
+      "prompt_file": "/home/user/claude-code-puzzle/test_prompts/en_prompt.txt"
+    },
+    {
+      "language": "Polish",
+      "language_code": "pl",
+      "prompt_length": 1724,
+      "prompt_file": "/home/user/claude-code-puzzle/test_prompts/pl_prompt.txt"
+    },
+    {
+      "language": "Chinese",
+      "language_code": "zh-CN",
+      "prompt_length": 985,
+      "prompt_file": "/home/user/claude-code-puzzle/test_prompts/zh-CN_prompt.txt"
+    },
+    {
+      "language": "Traditional Chinese",
+      "language_code": "zh-TW",
+      "prompt_length": 984,
+      "prompt_file": "/home/user/claude-code-puzzle/test_prompts/zh-TW_prompt.txt"
+    }
+  ]
+}

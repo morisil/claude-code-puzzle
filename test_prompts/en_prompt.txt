@@ -1,0 +1,31 @@
+You are being tested on complex logical reasoning. Please solve the following puzzle carefully and systematically.
+
+## The Puzzle
+
+### English Version
+
+Five researchers—Dr. Anderson, Dr. Brown, Dr. Chen, Dr. Dubois, and Dr. Evans—are scheduled to present their findings at an international conference. There are exactly five time slots: 9:00 AM, 10:30 AM, 1:00 PM, 2:30 PM, and 4:00 PM.
+
+Based on the following constraints, determine which researcher presents at which time:
+
+1. Dr. Anderson must present before Dr. Brown, but not in consecutive time slots.
+2. Dr. Chen cannot present at 9:00 AM or 4:00 PM.
+3. Dr. Dubois presents exactly two time slots after Dr. Chen.
+4. Dr. Evans's presentation immediately follows Dr. Chen's presentation (consecutive slots).
+5. The 1:00 PM slot is occupied by someone whose name starts with a vowel.
+6. Dr. Brown presents in the afternoon (1:00 PM or later).
+7. There is exactly one presentation between Dr. Anderson and Dr. Evans.
+8. Dr. Chen's presentation is in the morning (before 1:00 PM).
+
+**Question:** What is the complete schedule, listing each time slot with the corresponding researcher?
+
+**Additional Challenge:** If Dr. Dubois must cancel, which researcher could take their slot without violating any of the other constraints about their own scheduling (excluding constraint 3)?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Answer both the main question AND the additional challenge
+5. Present your final answer in a clear format
+
+Please proceed with solving the puzzle.

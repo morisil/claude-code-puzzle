@@ -1,0 +1,171 @@
+{
+  "timestamp": "2025-11-03T23:23:59.780992",
+  "test_name": "Polish Reasoning Efficiency Test",
+  "model": "Claude Sonnet 4.5",
+  "scores": [
+    {
+      "language": "English",
+      "file": "/home/user/claude-code-puzzle/test_responses/english_response.txt",
+      "word_count": 877,
+      "char_count": 4962,
+      "correctness": 40,
+      "reasoning_quality": 20,
+      "constraint_tracking": 20,
+      "verification": 20,
+      "bonus": 20,
+      "total": 120,
+      "notes": [
+        "Bonus question answered correctly"
+      ],
+      "details": {
+        "correct_assignments": 5,
+        "reasoning_indicators": {
+          "uses_constraints": true,
+          "shows_deduction": true,
+          "uses_logical_operators": true,
+          "detailed_explanation": true,
+          "step_by_step": true
+        },
+        "constraints_mentioned": 8,
+        "verification_indicators": {
+          "explicit_verification": true,
+          "constraint_checking": true,
+          "re_validates_solution": true,
+          "shows_correctness": true
+        },
+        "bonus_indicators": {
+          "mentions_brown": true,
+          "mentions_replacement": true,
+          "mentions_230_or_dubois": true,
+          "correct_reasoning": true
+        }
+      }
+    },
+    {
+      "language": "Polish",
+      "file": "/home/user/claude-code-puzzle/test_responses/polish_response.txt",
+      "word_count": 914,
+      "char_count": 6587,
+      "correctness": 40,
+      "reasoning_quality": 20,
+      "constraint_tracking": 0,
+      "verification": 15,
+      "bonus": 20,
+      "total": 95,
+      "notes": [
+        "Bonus question answered correctly"
+      ],
+      "details": {
+        "correct_assignments": 5,
+        "reasoning_indicators": {
+          "uses_constraints": true,
+          "shows_deduction": true,
+          "uses_logical_operators": true,
+          "detailed_explanation": true,
+          "step_by_step": true,
+          "case_analysis": true
+        },
+        "constraints_mentioned": 0,
+        "verification_indicators": {
+          "explicit_verification": true,
+          "constraint_checking": true,
+          "shows_correctness": true
+        },
+        "bonus_indicators": {
+          "mentions_brown": true,
+          "mentions_replacement": true,
+          "mentions_230_or_dubois": true,
+          "correct_reasoning": true
+        }
+      }
+    },
+    {
+      "language": "Chinese (Simplified)",
+      "file": "/home/user/claude-code-puzzle/test_responses/chinese_response.txt",
+      "word_count": 172,
+      "char_count": 1794,
+      "correctness": 40,
+      "reasoning_quality": 16,
+      "constraint_tracking": 20,
+      "verification": 20,
+      "bonus": 20,
+      "total": 116,
+      "notes": [
+        "Bonus question answered correctly"
+      ],
+      "details": {
+        "correct_assignments": 5,
+        "reasoning_indicators": {
+          "uses_constraints": true,
+          "shows_deduction": true,
+          "uses_logical_operators": true,
+          "detailed_explanation": true
+        },
+        "constraints_mentioned": 8,
+        "verification_indicators": {
+          "explicit_verification": true,
+          "constraint_checking": true,
+          "re_validates_solution": true,
+          "shows_correctness": true
+        },
+        "bonus_indicators": {
+          "mentions_brown": true,
+          "mentions_replacement": true,
+          "mentions_230_or_dubois": true,
+          "correct_reasoning": true
+        }
+      }
+    },
+    {
+      "language": "Traditional Chinese",
+      "file": "/home/user/claude-code-puzzle/test_responses/traditional_chinese_response.txt",
+      "word_count": 211,
+      "char_count": 2206,
+      "correctness": 40,
+      "reasoning_quality": 20,
+      "constraint_tracking": 20,
+      "verification": 20,
+      "bonus": 20,
+      "total": 120,
+      "notes": [
+        "Bonus question answered correctly"
+      ],
+      "details": {
+        "correct_assignments": 5,
+        "reasoning_indicators": {
+          "uses_constraints": true,
+          "shows_deduction": true,
+          "uses_logical_operators": true,
+          "detailed_explanation": true,
+          "step_by_step": true,
+          "case_analysis": true
+        },
+        "constraints_mentioned": 8,
+        "verification_indicators": {
+          "explicit_verification": true,
+          "constraint_checking": true,
+          "re_validates_solution": true,
+          "shows_correctness": true
+        },
+        "bonus_indicators": {
+          "mentions_brown": true,
+          "mentions_replacement": true,
+          "mentions_230_or_dubois": true,
+          "correct_reasoning": true
+        }
+      }
+    }
+  ],
+  "ranking": [
+    "English",
+    "Traditional Chinese",
+    "Chinese (Simplified)",
+    "Polish"
+  ],
+  "statistics": {
+    "highest_score": 120,
+    "lowest_score": 95,
+    "average_score": 112.75,
+    "score_range": 25
+  }
+}
