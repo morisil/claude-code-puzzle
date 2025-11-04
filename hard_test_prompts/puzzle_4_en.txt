@@ -1,0 +1,23 @@
+Seven researchers—Dr. Fischer, Dr. Quinn, Dr. Lee, Dr. Jones, Dr. Anderson, Dr. Martinez, and Dr. Evans—are scheduled to present their findings at an international conference. There are exactly seven time slots: 10:00 AM, 11:30 AM, 8:30 AM, 9:30 AM, 1:30 PM, 2:00 PM, and 2:30 PM.
+
+Based on the following constraints, determine which researcher presents at which time:
+
+1. Dr. Anderson and Dr. Jones cannot present in adjacent time slots.
+2. Dr. Martinez presents exactly 2 time slots after Dr. Fischer.
+3. There are exactly 2 presentation(s) between Dr. Fischer and Dr. Evans.
+4. Dr. Anderson cannot present at 11:30 or 9:30.
+5. Dr. Martinez presents in the second half of the schedule.
+6. The 10:00 slot is occupied by someone whose name starts with a vowel.
+7. Dr. Lee and Dr. Anderson cannot present in adjacent time slots.
+8. The 11:30 slot is occupied by someone whose name starts with a vowel.
+9. The 11:30 slot is occupied by someone whose name starts with a vowel.
+10. Dr. Lee presents exactly 3 time slots after Dr. Jones.
+**Question:** What is the complete schedule, listing each time slot with the corresponding researcher?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Present your final answer in a clear format
+
+Please solve this puzzle systematically.

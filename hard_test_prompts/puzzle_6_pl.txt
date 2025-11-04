@@ -1,0 +1,23 @@
+Siedmioro naukowców—Dr. Evans, Dr. Davis, Dr. Green, Dr. Lee, Dr. O'Brien, Dr. Anderson i Dr. Jones—ma zaprezentować swoje odkrycia na międzynarodowej konferencji. Dostępnych jest dokładnie siedem przedziałów czasowych: 11:30, 8:30, 1:00, 2:00, 3:30, 5:00 i 5:30.
+
+Na podstawie poniższych ograniczeń określ, który naukowiec prezentuje o której godzinie:
+
+1. Dr. O'Brien prezentuje w pierwszej połowie harmonogramu.
+2. Dr. Evans jest dokładnie Dr. Lee muszą być oddalone o co najmniej 4 przedziały czasowe.
+3. Dr. Evans nie może prezentować o 8:30 ani 3:30.
+4. Przedział o 5:00 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+5. Dr. Davis presents in the afternoon (1:00 PM ani later).
+6. Dr. Anderson prezentuje dokładnie 3 przedziały czasowe po Dr. O'Brien.
+7. Dr. O'Brien musi prezentować przed Dr. Evans, ale nie w kolejnych przedziałach czasowych.
+8. Przedział o 11:30 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+9. Dr. Green nie może prezentować o 5:30 ani 5:00.
+10. Dr. Anderson prezentuje bezpośrednio po Dr. Jones (w kolejnych przedziałach).
+**Pytanie:** Jaki jest kompletny harmonogram, wymieniający każdy przedział czasowy z odpowiadającym mu naukowcem?
+
+WAŻNE INSTRUKCJE:
+1. Pokaż kompletny proces rozumowania krok po kroku
+2. Śledź każde ograniczenie uważnie
+3. Zweryfikuj swoją ostateczną odpowiedź względem WSZYSTKICH ograniczeń
+4. Przedstaw swoją ostateczną odpowiedź w przejrzystym formacie
+
+Proszę rozwiązać tę zagadkę systematycznie.

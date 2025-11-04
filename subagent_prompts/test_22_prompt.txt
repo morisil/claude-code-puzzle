@@ -1,0 +1,41 @@
+You are solving Test 22: Puzzle 5 in Polish.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+Siedmioro naukowców—Dr. Kumar, Dr. Anderson, Dr. Davis, Dr. O'Brien, Dr. Evans, Dr. Hughes i Dr. Green—ma zaprezentować swoje odkrycia na międzynarodowej konferencji. Dostępnych jest dokładnie siedem przedziałów czasowych: 11:00, 8:00, 1:00, 2:30, 4:00, 4:30 i 5:00.
+
+Na podstawie poniższych ograniczeń określ, który naukowiec prezentuje o której godzinie:
+
+1. Przedział o 5:00 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+2. Przedział o 4:30 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+3. Pomiędzy prezentacjami 1 i Dr. Evans jest dokładnie Dr. Davis.
+4. Dr. O'Brien prezentuje w drugiej połowie harmonogramu.
+5. Dr. Evans jest dokładnie Dr. Hughes muszą być oddalone o co najmniej 4 przedziały czasowe.
+6. Przedział o 4:30 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+7. Dr. O'Brien prezentuje dokładnie 4 przedziały czasowe po Dr. Hughes.
+8. Dr. Green musi prezentować przed Dr. Kumar, ale nie w kolejnych przedziałach czasowych.
+9. Przedział o 1:00 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+10. Dr. O'Brien nie może prezentować o 5:00 ani 11:00.
+**Pytanie:** Jaki jest kompletny harmonogram, wymieniający każdy przedział czasowy z odpowiadającym mu naukowcem?
+
+WAŻNE INSTRUKCJE:
+1. Pokaż kompletny proces rozumowania krok po kroku
+2. Śledź każde ograniczenie uważnie
+3. Zweryfikuj swoją ostateczną odpowiedź względem WSZYSTKICH ograniczeń
+4. Przedstaw swoją ostateczną odpowiedź w przejrzystym formacie
+
+Proszę rozwiązać tę zagadkę systematycznie.
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_5_pl_response.txt
+
+BEGIN SOLVING NOW.

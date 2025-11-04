@@ -1,0 +1,41 @@
+You are solving Test 3: Puzzle 1 in Simplified Chinese.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+七位研究人员——Dr. Brown、Dr. Fischer、Dr. Ivanov、Dr. Nelson、Dr. Martinez、Dr. Kumar、Dr. O'Brien——计划在一次国际会议上展示他们的研究成果。会议共有七个时间段：上午10:00、上午10:30、上午9:00、上午9:30、下午1:00、下午2:30、下午5:30。
+
+根据以下约束条件,确定每位研究人员在哪个时间段进行演讲:
+
+1. Dr. Nelson不能在9:00或5:30.
+2. Dr. Brown不能在1:00或9:30.
+3. 9:30的时间段由姓氏以元音字母开头的人占据.
+4. 1和Dr. Kumar博士Dr. Nelson.
+5. Dr. Fischer博士Dr. Brown不能在相邻的时间段演讲.
+6. 2和Dr. Ivanov博士Dr. Nelson.
+7. Dr. Martinez的演讲时间恰好比2晚Dr. Fischer.
+8. Dr. Nelson不能在10:30或9:30.
+9. Dr. Kumar不能在1:00或10:30.
+10. Dr. Fischer必须在Dr. Kumar之前演讲,但不能在连续的时间段.
+**问题:** 完整的日程安排是什么?请列出每个时间段及对应的研究人员。
+
+重要说明:
+1. 展示完整的逐步推理过程
+2. 仔细跟踪每个约束条件
+3. 针对所有约束条件验证最终答案
+4. 以清晰的格式呈现最终答案
+
+请系统地解决这个谜题。
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_1_zh-CN_response.txt
+
+BEGIN SOLVING NOW.

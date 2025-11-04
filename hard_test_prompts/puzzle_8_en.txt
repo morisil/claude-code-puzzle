@@ -1,0 +1,23 @@
+Seven researchers—Dr. Kumar, Dr. O'Brien, Dr. Lee, Dr. Brown, Dr. Ivanov, Dr. Nelson, and Dr. Chen—are scheduled to present their findings at an international conference. There are exactly seven time slots: 10:00 AM, 11:30 AM, 8:00 AM, 9:00 AM, 1:00 PM, 3:00 PM, and 5:30 PM.
+
+Based on the following constraints, determine which researcher presents at which time:
+
+1. The 3:00 slot is occupied by someone whose name starts with a vowel.
+2. Dr. Ivanov cannot present at 5:30 or 9:00.
+3. Dr. Chen must present before Dr. Nelson, but not in consecutive time slots.
+4. Dr. Nelson presents exactly 2 time slots after Dr. Brown.
+5. Dr. Kumar's presentation immediately follows Dr. O'Brien's presentation (consecutive slots).
+6. Dr. Chen presents in the morning (before 1:00 PM).
+7. Dr. Chen cannot present at 9:00 or 10:00.
+8. Dr. Chen and Dr. Ivanov cannot present in adjacent time slots.
+9. Dr. Chen cannot present at 10:00 or 11:30.
+10. Dr. Ivanov presents in the afternoon (1:00 PM or later).
+**Question:** What is the complete schedule, listing each time slot with the corresponding researcher?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Present your final answer in a clear format
+
+Please solve this puzzle systematically.

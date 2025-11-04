@@ -1,0 +1,23 @@
+Seven researchers—Dr. Kumar, Dr. Lee, Dr. Davis, Dr. Patel, Dr. Jones, Dr. Evans, and Dr. Anderson—are scheduled to present their findings at an international conference. There are exactly seven time slots: 10:00 AM, 11:30 AM, 9:00 AM, 2:00 PM, 2:30 PM, 3:30 PM, and 4:30 PM.
+
+Based on the following constraints, determine which researcher presents at which time:
+
+1. Dr. Jones must present before Dr. Patel, but not in consecutive time slots.
+2. Dr. Anderson's presentation immediately follows Dr. Jones's presentation (consecutive slots).
+3. Dr. Jones cannot present at 9:00 or 11:30.
+4. Dr. Kumar cannot present at 3:30 or 4:30.
+5. Dr. Patel presents in the afternoon (1:00 PM or later).
+6. Dr. Evans presents exactly 2 time slots after Dr. Davis.
+7. Dr. Evans cannot present at 2:30 or 2:00.
+8. There are exactly 1 presentation(s) between Dr. Lee and Dr. Davis.
+9. Dr. Anderson must present before Dr. Evans, but not in consecutive time slots.
+10. The 4:30 slot is occupied by someone whose name starts with a vowel.
+**Question:** What is the complete schedule, listing each time slot with the corresponding researcher?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Present your final answer in a clear format
+
+Please solve this puzzle systematically.

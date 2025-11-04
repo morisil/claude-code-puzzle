@@ -1,0 +1,42 @@
+You are solving Test 43: Puzzle 9 in Simplified Chinese.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+七位研究人员——Dr. Ivanov、Dr. Martinez、Dr. Quinn、Dr. Hughes、Dr. Chen、Dr. O'Brien、Dr. Lee——计划在一次国际会议上展示他们的研究成果。会议共有七个时间段：上午10:00、上午10:30、上午8:30、下午2:30、下午3:30、下午4:30、下午5:00。
+
+根据以下约束条件,确定每位研究人员在哪个时间段进行演讲:
+
+1. 10:30的时间段由姓氏以元音字母开头的人占据.
+2. Dr. Ivanov在日程的后半部分演讲.
+3. Dr. Martinez的演讲紧接在Dr. O'Brien的演讲之后(连续时间段).
+4. Dr. Ivanov不能在2:30或10:30.
+5. Dr. Quinn的演讲时间恰好比2晚Dr. Ivanov.
+6. Dr. Lee不能在5:00或3:30.
+7. 3和Dr. Ivanov博士Dr. Chen.
+8. Dr. O'Brien博士Dr. Hughes不能在相邻的时间段演讲.
+9. Dr. O'Brien必须在Dr. Ivanov之前演讲,但不能在连续的时间段.
+10. Dr. Chen博士Dr. Ivanov不能在相邻的时间段演讲.
+11. Dr. Martinez博士Dr. Lee不能在相邻的时间段演讲.
+**问题:** 完整的日程安排是什么?请列出每个时间段及对应的研究人员。
+
+重要说明:
+1. 展示完整的逐步推理过程
+2. 仔细跟踪每个约束条件
+3. 针对所有约束条件验证最终答案
+4. 以清晰的格式呈现最终答案
+
+请系统地解决这个谜题。
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_9_zh-CN_response.txt
+
+BEGIN SOLVING NOW.

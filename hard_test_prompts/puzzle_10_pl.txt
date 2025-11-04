@@ -1,0 +1,25 @@
+Siedmioro naukowców—Dr. Evans, Dr. Hughes, Dr. Green, Dr. Ivanov, Dr. Lee, Dr. Anderson i Dr. Davis—ma zaprezentować swoje odkrycia na międzynarodowej konferencji. Dostępnych jest dokładnie siedem przedziałów czasowych: 10:00, 11:00, 9:00, 2:30, 3:00, 4:00 i 5:30.
+
+Na podstawie poniższych ograniczeń określ, który naukowiec prezentuje o której godzinie:
+
+1. Dr. Hughes prezentuje w drugiej połowie harmonogramu.
+2. Dr. Hughes prezentuje w drugiej połowie harmonogramu.
+3. Dr. Lee jest dokładnie Dr. Evans muszą być oddalone o co najmniej 4 przedziały czasowe.
+4. Dr. Ivanov jest dokładnie Dr. Green nie mogą prezentować w sąsiednich przedziałach czasowych.
+5. Dr. Green musi prezentować przed Dr. Ivanov, ale nie w kolejnych przedziałach czasowych.
+6. Dr. Green jest dokładnie Dr. Evans muszą być oddalone o co najmniej 4 przedziały czasowe.
+7. Dr. Davis musi prezentować przed Dr. Ivanov, ale nie w kolejnych przedziałach czasowych.
+8. Dr. Green nie może prezentować o 9:00 ani 10:00.
+9. Przedział o 11:00 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+10. Dr. Green prezentuje bezpośrednio po Dr. Hughes (w kolejnych przedziałach).
+11. Pomiędzy prezentacjami 2 i Dr. Hughes jest dokładnie Dr. Ivanov.
+12. Dr. Lee prezentuje w drugiej połowie harmonogramu.
+**Pytanie:** Jaki jest kompletny harmonogram, wymieniający każdy przedział czasowy z odpowiadającym mu naukowcem?
+
+WAŻNE INSTRUKCJE:
+1. Pokaż kompletny proces rozumowania krok po kroku
+2. Śledź każde ograniczenie uważnie
+3. Zweryfikuj swoją ostateczną odpowiedź względem WSZYSTKICH ograniczeń
+4. Przedstaw swoją ostateczną odpowiedź w przejrzystym formacie
+
+Proszę rozwiązać tę zagadkę systematycznie.

@@ -1,0 +1,41 @@
+You are solving Test 37: Puzzle 8 in Polish.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+Siedmioro naukowców—Dr. Kumar, Dr. O'Brien, Dr. Lee, Dr. Brown, Dr. Ivanov, Dr. Nelson i Dr. Chen—ma zaprezentować swoje odkrycia na międzynarodowej konferencji. Dostępnych jest dokładnie siedem przedziałów czasowych: 10:00, 11:30, 8:00, 9:00, 1:00, 3:00 i 5:30.
+
+Na podstawie poniższych ograniczeń określ, który naukowiec prezentuje o której godzinie:
+
+1. Przedział o 3:00 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+2. Dr. Ivanov nie może prezentować o 5:30 ani 9:00.
+3. Dr. Chen musi prezentować przed Dr. Nelson, ale nie w kolejnych przedziałach czasowych.
+4. Dr. Nelson prezentuje dokładnie 2 przedziały czasowe po Dr. Brown.
+5. Dr. Kumar prezentuje bezpośrednio po Dr. O'Brien (w kolejnych przedziałach).
+6. Dr. Chen prezentuje rano (przed 13:00).
+7. Dr. Chen nie może prezentować o 9:00 ani 10:00.
+8. Dr. Chen jest dokładnie Dr. Ivanov nie mogą prezentować w sąsiednich przedziałach czasowych.
+9. Dr. Chen nie może prezentować o 10:00 ani 11:30.
+10. Dr. Ivanov presents in the afternoon (1:00 PM ani later).
+**Pytanie:** Jaki jest kompletny harmonogram, wymieniający każdy przedział czasowy z odpowiadającym mu naukowcem?
+
+WAŻNE INSTRUKCJE:
+1. Pokaż kompletny proces rozumowania krok po kroku
+2. Śledź każde ograniczenie uważnie
+3. Zweryfikuj swoją ostateczną odpowiedź względem WSZYSTKICH ograniczeń
+4. Przedstaw swoją ostateczną odpowiedź w przejrzystym formacie
+
+Proszę rozwiązać tę zagadkę systematycznie.
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_8_pl_response.txt
+
+BEGIN SOLVING NOW.

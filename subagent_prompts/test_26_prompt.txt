@@ -1,0 +1,41 @@
+You are solving Test 26: Puzzle 6 in English.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+Seven researchers—Dr. Evans, Dr. Davis, Dr. Green, Dr. Lee, Dr. O'Brien, Dr. Anderson, and Dr. Jones—are scheduled to present their findings at an international conference. There are exactly seven time slots: 11:30 AM, 8:30 AM, 1:00 PM, 2:00 PM, 3:30 PM, 5:00 PM, and 5:30 PM.
+
+Based on the following constraints, determine which researcher presents at which time:
+
+1. Dr. O'Brien presents in the first half of the schedule.
+2. Dr. Evans and Dr. Lee must be at least 4 time slots apart.
+3. Dr. Evans cannot present at 8:30 or 3:30.
+4. The 5:00 slot is occupied by someone whose name starts with a vowel.
+5. Dr. Davis presents in the afternoon (1:00 PM or later).
+6. Dr. Anderson presents exactly 3 time slots after Dr. O'Brien.
+7. Dr. O'Brien must present before Dr. Evans, but not in consecutive time slots.
+8. The 11:30 slot is occupied by someone whose name starts with a vowel.
+9. Dr. Green cannot present at 5:30 or 5:00.
+10. Dr. Anderson's presentation immediately follows Dr. Jones's presentation (consecutive slots).
+**Question:** What is the complete schedule, listing each time slot with the corresponding researcher?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Present your final answer in a clear format
+
+Please solve this puzzle systematically.
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_6_en_response.txt
+
+BEGIN SOLVING NOW.
