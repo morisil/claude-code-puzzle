@@ -1,0 +1,20 @@
+五位研究人员——Dr. Green、Dr. Hughes、Dr. Anderson、Dr. Ivanov、Dr. Evans——计划在一次国际会议上展示他们的研究成果。会议共有五个时间段：上午10:30、上午9:00、下午1:30、下午3:30、下午4:30。
+
+根据以下约束条件,确定每位研究人员在哪个时间段进行演讲:
+
+1. Dr. Ivanov必须在Dr. Anderson之前演讲,但不能在连续的时间段.
+2. Dr. Green不能在4:30或1:30.
+3. Dr. Hughes的演讲时间恰好比2晚Dr. Evans.
+4. 10:30的时间段由姓氏以元音字母开头的人占据.
+5. Dr. Anderson presents in the afternoon (1:00 PM或later).
+6. 2和Dr. Anderson博士Dr. Ivanov.
+7. Dr. Evans's presentation is in the morning (before 1:00 PM).
+**问题:** 完整的日程安排是什么?请列出每个时间段及对应的研究人员。
+
+重要说明:
+1. 展示完整的逐步推理过程
+2. 仔细跟踪每个约束条件
+3. 针对所有约束条件验证最终答案
+4. 以清晰的格式呈现最终答案
+
+请系统地解决这个谜题。

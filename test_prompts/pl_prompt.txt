@@ -1,0 +1,29 @@
+You are being tested on complex logical reasoning. Please solve the following puzzle carefully and systematically.
+
+### Polish Version (Wersja Polska)
+
+Pięcioro naukowców—Dr Anderson, Dr Brown, Dr Chen, Dr Dubois i Dr Evans—ma zaprezentować swoje odkrycia na międzynarodowej konferencji. Dostępnych jest dokładnie pięć przedziałów czasowych: 9:00, 10:30, 13:00, 14:30 i 16:00.
+
+Na podstawie poniższych ograniczeń określ, który naukowiec prezentuje o której godzinie:
+
+1. Dr Anderson musi prezentować przed Dr Brown, ale nie w kolejnych przedziałach czasowych.
+2. Dr Chen nie może prezentować o 9:00 ani o 16:00.
+3. Dr Dubois prezentuje dokładnie dwa przedziały czasowe po Dr Chen.
+4. Prezentacja Dr Evans odbywa się bezpośrednio po prezentacji Dr Chen (w kolejnych przedziałach).
+5. Przedział o 13:00 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+6. Dr Brown prezentuje po południu (o 13:00 lub później).
+7. Pomiędzy prezentacjami Dr Anderson i Dr Evans jest dokładnie jedna inna prezentacja.
+8. Prezentacja Dr Chen odbywa się rano (przed 13:00).
+
+**Pytanie:** Jaki jest kompletny harmonogram, wymieniający każdy przedział czasowy z odpowiadającym mu naukowcem?
+
+**Dodatkowe wyzwanie:** Jeśli Dr Dubois musi odwołać swoją prezentację, który naukowiec mógłby zająć jego miejsce bez naruszenia żadnych innych ograniczeń dotyczących ich własnego harmonogramu (z wyłączeniem ograniczenia 3)?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Answer both the main question AND the additional challenge
+5. Present your final answer in a clear format
+
+Please proceed with solving the puzzle.

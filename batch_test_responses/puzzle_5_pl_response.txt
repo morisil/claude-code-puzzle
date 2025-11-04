@@ -1,0 +1,141 @@
+ROZWIĄZANIE LOGICZNEJ ZAGADKI - HARMONOGRAM KONFERENCJI NAUKOWEJ
+
+================================================================================
+ANALIZA KROK PO KROKU
+================================================================================
+
+DANE WEJŚCIOWE:
+- Pięcioro naukowców: Dr. Chen, Dr. Anderson, Dr. Hughes, Dr. Brown, Dr. Evans
+- Pięć przedziałów czasowych: 11:00, 9:30, 2:00, 3:00, 4:00
+
+PORZĄDEK CHRONOLOGICZNY:
+Pozycja 1: 9:30 (rano)
+Pozycja 2: 11:00 (rano)
+Pozycja 3: 2:00 (po południu)
+Pozycja 4: 3:00 (po południu)
+Pozycja 5: 4:00 (po południu)
+
+UWAGA: Problem podaje przedziały w kolejności: 11:00, 9:30, 2:00, 3:00, 4:00
+Dla celów ograniczeń pozycyjnych, użyjemy tej kolejności jako pozycji 1-5.
+
+================================================================================
+KROK 1: ANALIZA OGRANICZENIA 3 i 7
+================================================================================
+
+Ograniczenie 3: Dr. Brown prezentuje dokładnie 3 przedziały czasowe po Dr. Evans
+Ograniczenie 7: Prezentacja Dr. Evans odbywa się rano (przed 1:00)
+
+Evans może być tylko na pozycji rano: 9:30 lub 11:00
+
+Jeśli użyjemy kolejności z problemu (11:00=poz1, 9:30=poz2, 2:00=poz3, 3:00=poz4, 4:00=poz5):
+- Evans na pozycji 1 (11:00) → Brown na pozycji 4 (3:00)
+- Evans na pozycji 2 (9:30) → Brown na pozycji 5 (4:00)
+
+================================================================================
+KROK 2: ANALIZA OGRANICZENIA 4
+================================================================================
+
+Ograniczenie 4: Przedział o 9:30 zajęty przez osobę z nazwiskiem na samogłoskę
+
+Nazwiska zaczynające się od samogłosek:
+- Anderson (A)
+- Evans (E)
+
+Więc 9:30 musi być zajęte przez Anderson lub Evans.
+
+================================================================================
+KROK 3: TESTOWANIE PRZYPADKU 1
+================================================================================
+
+PRZYPADEK 1: Evans na pozycji 1 (11:00), Brown na pozycji 4 (3:00)
+
+Ograniczenie 4 wymaga: 9:30 (pozycja 2) = Anderson lub Evans
+Ponieważ Evans jest na pozycji 1, pozycja 2 musi być Anderson.
+
+Ale Anderson na pozycji 2 → Hughes musi być na pozycji 0 (2-2=0)
+To niemożliwe. PRZYPADEK 1 ODRZUCONY.
+
+================================================================================
+KROK 4: TESTOWANIE PRZYPADKU 2
+================================================================================
+
+PRZYPADEK 2: Evans na pozycji 2 (9:30), Brown na pozycji 5 (4:00)
+
+Ograniczenie 4: 9:30 zajęte przez Evans ✓
+
+Ograniczenia 1 i 6: Hughes przed Anderson, z dokładnie 1 prezentacją pomiędzy
+To oznacza: Hughes na pozycji H, Anderson na pozycji H+2
+
+Możliwe opcje:
+- (H, A) = (1, 3): Hughes na 11:00, Anderson na 2:00
+- (H, A) = (2, 4): Hughes na 9:30 (ale tam jest Evans) ✗
+- (H, A) = (3, 5): Anderson na 4:00 (ale tam jest Brown) ✗
+
+Jedyna możliwość: Hughes na pozycji 1 (11:00), Anderson na pozycji 3 (2:00)
+
+To pozostawia Chen na pozycji 4 (3:00).
+
+================================================================================
+KROK 5: PRZYPISANIE WSTĘPNE
+================================================================================
+
+- Pozycja 1 (11:00): Hughes
+- Pozycja 2 (9:30): Evans
+- Pozycja 3 (2:00): Anderson
+- Pozycja 4 (3:00): Chen
+- Pozycja 5 (4:00): Brown
+
+================================================================================
+KROK 6: WERYFIKACJA WSZYSTKICH OGRANICZEŃ
+================================================================================
+
+1. Dr. Hughes musi prezentować przed Dr. Anderson, ale nie w kolejnych przedziałach
+   - Hughes: 11:00 | Anderson: 2:00
+   - Chronologicznie: 11:00 < 14:00 ✓
+   - Pozycyjnie: poz 1 i poz 3 (nie są kolejne) ✓
+   - SPEŁNIONE ✓
+
+2. Dr. Chen nie może prezentować o 2:00 ani 9:30
+   - Chen prezentuje o 3:00 ✓
+   - SPEŁNIONE ✓
+
+3. Dr. Brown prezentuje dokładnie 3 przedziały czasowe po Dr. Evans
+   - Evans: pozycja 2, Brown: pozycja 5
+   - 5 - 2 = 3 ✓
+   - SPEŁNIONE ✓
+
+4. Przedział o 9:30 jest zajęty przez osobę z nazwiskiem na samogłoskę
+   - 9:30: Dr. Evans (E = samogłoska) ✓
+   - SPEŁNIONE ✓
+
+5. Dr. Chen prezentuje po południu (o 1:00 lub później)
+   - Chen prezentuje o 3:00 (15:00) ✓
+   - SPEŁNIONE ✓
+
+6. Pomiędzy prezentacjami Dr. Anderson i Dr. Hughes jest dokładnie 1 inna prezentacja
+   - Hughes: pozycja 1, Anderson: pozycja 3
+   - Pomiędzy: pozycja 2 (Evans) - dokładnie 1 osoba ✓
+   - SPEŁNIONE ✓
+
+7. Prezentacja Dr. Evans odbywa się rano (przed 1:00)
+   - Evans prezentuje o 9:30 ✓
+   - SPEŁNIONE ✓
+
+================================================================================
+OSTATECZNE ROZWIĄZANIE
+================================================================================
+
+Kompletny harmonogram konferencji:
+
+9:30  - Dr. Evans
+11:00 - Dr. Hughes
+2:00  - Dr. Anderson
+3:00  - Dr. Chen
+4:00  - Dr. Brown
+
+================================================================================
+PODSUMOWANIE
+================================================================================
+
+Wszystkie siedem ograniczeń zostało spełnionych. Rozwiązanie jest unikalne
+i poprawne.

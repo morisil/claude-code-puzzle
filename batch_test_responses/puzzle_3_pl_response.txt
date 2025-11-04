@@ -1,0 +1,164 @@
+ROZWIĄZANIE ŁAMIGŁÓWKI LOGICZNEJ - HARMONOGRAM KONFERENCJI
+
+================================================================================
+ANALIZA KROK PO KROKU
+================================================================================
+
+DANE WEJŚCIOWE:
+- Naukowcy: Dr. Green, Dr. Hughes, Dr. Anderson, Dr. Ivanov, Dr. Evans
+- Przedziały czasowe: 9:00, 10:30, 1:30, 3:30, 4:30
+- Przedziały poranne (przed 1:00): 9:00, 10:30
+- Przedziały popołudniowe (1:00 lub później): 1:30, 3:30, 4:30
+
+Uporządkowane przedziały czasowe:
+Pozycja 1: 9:00 (rano)
+Pozycja 2: 10:30 (rano)
+Pozycja 3: 1:30 (popołudnie)
+Pozycja 4: 3:30 (popołudnie)
+Pozycja 5: 4:30 (popołudnie)
+
+================================================================================
+ANALIZA OGRANICZEŃ
+================================================================================
+
+Ograniczenie 7: Dr. Evans prezentuje rano (przed 1:00)
+→ Dr. Evans może być tylko o 9:00 lub 10:30
+
+Ograniczenie 3: Dr. Hughes prezentuje dokładnie 2 przedziały czasowe po Dr. Evans
+→ Jeśli Evans na pozycji 1 (9:00), to Hughes na pozycji 3 (1:30)
+→ Jeśli Evans na pozycji 2 (10:30), to Hughes na pozycji 4 (3:30)
+
+Ograniczenie 4: Przedział o 10:30 zajęty przez osobę, której nazwisko zaczyna się od samogłoski
+→ Nazwiska zaczynające się od samogłoski: Anderson (A), Evans (E), Ivanov (I)
+→ O 10:30 musi być Anderson, Evans lub Ivanov
+
+Ograniczenie 5: Dr. Anderson prezentuje po południu (o 1:00 lub później)
+→ Anderson może być tylko o 1:30, 3:30 lub 4:30
+→ Anderson NIE może być o 10:30
+
+Łącząc ograniczenia 4 i 5:
+→ O 10:30 musi być Evans lub Ivanov
+
+================================================================================
+PRZYPADEK 1: DR. EVANS O 9:00
+================================================================================
+
+Założenie: Evans na pozycji 1 (9:00)
+
+Z ograniczenia 3:
+→ Hughes na pozycji 3 (1:30)
+
+Z ograniczenia 4 i wykluczenia Andersona:
+→ 10:30 (pozycja 2) musi być Ivanov
+
+Bieżące przypisania:
+- Pozycja 1 (9:00): Evans
+- Pozycja 2 (10:30): Ivanov
+- Pozycja 3 (1:30): Hughes
+- Pozycja 4 (3:30): ?
+- Pozycja 5 (4:30): ?
+
+Pozostali: Anderson, Green
+
+Z ograniczenia 5: Anderson jest po południu
+→ Anderson na pozycji 4 (3:30) lub pozycji 5 (4:30)
+
+Z ograniczenia 6: Między Anderson i Ivanov są dokładnie 2 inne prezentacje
+→ Ivanov jest na pozycji 2
+
+Sprawdzenie opcji:
+- Jeśli Anderson na pozycji 4: Między pozycjami 2 i 4 jest tylko pozycja 3 (1 prezentacja) ✗
+- Jeśli Anderson na pozycji 5: Między pozycjami 2 i 5 są pozycje 3 i 4 (2 prezentacje) ✓
+
+Więc: Anderson na pozycji 5 (4:30), Green na pozycji 4 (3:30)
+
+Proponowane rozwiązanie z Przypadku 1:
+- 9:00: Dr. Evans
+- 10:30: Dr. Ivanov
+- 1:30: Dr. Hughes
+- 3:30: Dr. Green
+- 4:30: Dr. Anderson
+
+Weryfikacja wszystkich ograniczeń:
+1. Ivanov (poz. 2) przed Anderson (poz. 5), nie w kolejnych przedziałach ✓
+2. Green o 3:30 (nie o 4:30 ani 1:30) ✓
+3. Hughes (poz. 3) dokładnie 2 przedziały po Evans (poz. 1): 3-1=2 ✓
+4. 10:30 zajęte przez Ivanov (zaczyna się od 'I', samogłoski) ✓
+5. Anderson o 4:30 (popołudnie) ✓
+6. Między Ivanov (poz. 2) a Anderson (poz. 5): pozycje 3 i 4 = 2 prezentacje ✓
+7. Evans o 9:00 (rano) ✓
+
+WSZYSTKIE OGRANICZENIA SPEŁNIONE! ✓
+
+================================================================================
+PRZYPADEK 2: DR. EVANS O 10:30
+================================================================================
+
+Założenie: Evans na pozycji 2 (10:30)
+
+Z ograniczenia 3:
+→ Hughes na pozycji 4 (3:30)
+
+Z ograniczenia 4: Evans zaczyna się od 'E' (samogłoski) ✓
+
+Bieżące przypisania:
+- Pozycja 1 (9:00): ?
+- Pozycja 2 (10:30): Evans
+- Pozycja 3 (1:30): ?
+- Pozycja 4 (3:30): Hughes
+- Pozycja 5 (4:30): ?
+
+Pozostali: Anderson, Ivanov, Green
+
+Z ograniczenia 5: Anderson po południu
+→ Anderson na pozycji 3 (1:30) lub pozycji 5 (4:30)
+
+Z ograniczenia 1: Ivanov przed Anderson
+Z ograniczenia 6: Między Anderson i Ivanov dokładnie 2 prezentacje
+
+Testowanie Anderson o 1:30 (pozycja 3):
+- Ivanov musi być przed pozycją 3 → pozycja 1 (9:00)
+- Między pozycjami 1 i 3: tylko pozycja 2 (1 prezentacja) ✗
+
+Testowanie Anderson o 4:30 (pozycja 5):
+- Ivanov musi być przed pozycją 5
+- Jeśli Ivanov na pozycji 1: Między 1 i 5 są pozycje 2, 3, 4 (3 prezentacje) ✗
+- Jeśli Ivanov na pozycji 3: Między 3 i 5 jest pozycja 4 (1 prezentacja) ✗
+
+PRZYPADEK 2 NIE MA ROZWIĄZANIA ✗
+
+================================================================================
+OSTATECZNE ROZWIĄZANIE
+================================================================================
+
+Kompletny harmonogram konferencji:
+
+9:00    → Dr. Evans
+10:30   → Dr. Ivanov
+1:30    → Dr. Hughes
+3:30    → Dr. Green
+4:30    → Dr. Anderson
+
+================================================================================
+WERYFIKACJA KOŃCOWA
+================================================================================
+
+✓ Ograniczenie 1: Dr. Ivanov (10:30) prezentuje przed Dr. Anderson (4:30),
+  i nie są w kolejnych przedziałach (między nimi są 1:30 i 3:30)
+
+✓ Ograniczenie 2: Dr. Green prezentuje o 3:30 (nie o 4:30 ani 1:30)
+
+✓ Ograniczenie 3: Dr. Hughes (1:30 = pozycja 3) prezentuje dokładnie
+  2 przedziały czasowe po Dr. Evans (9:00 = pozycja 1)
+
+✓ Ograniczenie 4: Przedział o 10:30 zajęty przez Dr. Ivanov, którego
+  nazwisko zaczyna się od 'I' (samogłoski)
+
+✓ Ograniczenie 5: Dr. Anderson prezentuje o 4:30 (po południu)
+
+✓ Ograniczenie 6: Między Dr. Anderson (pozycja 5) a Dr. Ivanov (pozycja 2)
+  są dokładnie 2 inne prezentacje: Dr. Hughes (pozycja 3) i Dr. Green (pozycja 4)
+
+✓ Ograniczenie 7: Dr. Evans prezentuje o 9:00 (rano, przed 1:00)
+
+Wszystkie ograniczenia zostały spełnione. Rozwiązanie jest poprawne i unikalne.

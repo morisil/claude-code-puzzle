@@ -1,0 +1,20 @@
+Pięcioro naukowców—Dr. Hughes, Dr. Green, Dr. Jones, Dr. Anderson i Dr. Davis—ma zaprezentować swoje odkrycia na międzynarodowej konferencji. Dostępnych jest dokładnie pięć przedziałów czasowych: 10:30, 9:00, 1:00, 2:00 i 3:00.
+
+Na podstawie poniższych ograniczeń określ, który naukowiec prezentuje o której godzinie:
+
+1. Dr. Hughes musi prezentować przed Dr. Green, ale nie w kolejnych przedziałach czasowych.
+2. Dr. Jones nie może prezentować o 1:00 ani 10:30.
+3. Dr. Davis prezentuje dokładnie 2 przedziały czasowe po Dr. Anderson.
+4. Przedział o 10:30 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+5. Dr. Davis presents in the afternoon (1:00 PM ani later).
+6. Pomiędzy prezentacjami 2 i Dr. Hughes jest dokładnie Dr. Green.
+7. Dr. Hughes's presentation is in the morning (before 1:00 PM).
+**Pytanie:** Jaki jest kompletny harmonogram, wymieniający każdy przedział czasowy z odpowiadającym mu naukowcem?
+
+WAŻNE INSTRUKCJE:
+1. Pokaż kompletny proces rozumowania krok po kroku
+2. Śledź każde ograniczenie uważnie
+3. Zweryfikuj swoją ostateczną odpowiedź względem WSZYSTKICH ograniczeń
+4. Przedstaw swoją ostateczną odpowiedź w przejrzystym formacie
+
+Proszę rozwiązać tę zagadkę systematycznie.

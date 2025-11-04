@@ -1,0 +1,118 @@
+ROZWIĄZANIE ZAGADKI LOGICZNEJ
+================================
+
+ANALIZA KROK PO KROKU:
+
+Dane:
+- Pięciu naukowców: Dr. Hughes, Dr. Green, Dr. Jones, Dr. Anderson, Dr. Davis
+- Pięć przedziałów czasowych: 9:00, 10:30, 1:00, 2:00, 3:00
+- Przedziały podane w kolejności: 10:30, 9:00, 1:00, 2:00, 3:00
+
+KROK 1: Analiza ograniczenia 4
+Ograniczenie 4 mówi, że przedział 10:30 zajmuje osoba, której nazwisko zaczyna się od samogłoski.
+
+Sprawdzam nazwiska:
+- Hughes → H (spółgłoska)
+- Green → G (spółgłoska)
+- Jones → J (spółgłoska)
+- Anderson → A (samogłoska!) ✓
+- Davis → D (spółgłoska)
+
+WNIOSEK: Dr. Anderson prezentuje o 10:30
+
+
+KROK 2: Analiza ograniczenia 7
+Dr. Hughes prezentuje rano (przed 1:00).
+Przedziały poranne: 9:00, 10:30
+
+Ponieważ 10:30 zajmuje Dr. Anderson, Dr. Hughes musi prezentować o 9:00.
+
+WNIOSEK: Dr. Hughes prezentuje o 9:00
+
+
+KROK 3: Interpretacja numeracji przedziałów
+Przedziały podane są w kolejności: 10:30, 9:00, 1:00, 2:00, 3:00
+Traktuję to jako:
+- Przedział 1: 10:30
+- Przedział 2: 9:00
+- Przedział 3: 1:00
+- Przedział 4: 2:00
+- Przedział 5: 3:00
+
+
+KROK 4: Analiza ograniczenia 3
+Dr. Davis prezentuje dokładnie 2 przedziały czasowe po Dr. Anderson.
+
+Dr. Anderson jest w przedziale 1 (10:30).
+2 przedziały po przedziale 1 = przedział 3 (1:00).
+
+WNIOSEK: Dr. Davis prezentuje o 1:00
+
+
+KROK 5: Weryfikacja ograniczenia 5
+Dr. Davis prezentuje po południu (o 1:00 lub później).
+Dr. Davis jest o 1:00 ✓
+
+
+KROK 6: Analiza ograniczenia 6
+Pomiędzy prezentacjami Dr. Hughes i Dr. Green są dokładnie 2 inne prezentacje.
+
+Dr. Hughes jest w przedziale 2 (9:00).
+Aby było dokładnie 2 prezentacje między nimi:
+Przedział 2 (Hughes) → Przedział 3 (?) → Przedział 4 (?) → Przedział 5 (Green)
+
+WNIOSEK: Dr. Green prezentuje o 3:00
+
+
+KROK 7: Wyznaczenie Dr. Jones
+Pozostałe przedziały:
+- Zajęte: Przedział 1 (Anderson), Przedział 2 (Hughes), Przedział 3 (Davis), Przedział 5 (Green)
+- Wolny: Przedział 4 (2:00)
+
+WNIOSEK: Dr. Jones prezentuje o 2:00
+
+
+WERYFIKACJA WSZYSTKICH OGRANICZEŃ:
+
+1. Dr. Hughes musi prezentować przed Dr. Green, ale nie w kolejnych przedziałach czasowych.
+   ✓ Hughes (9:00) jest przed Green (3:00) chronologicznie
+   ✓ Hughes (przedział 2) i Green (przedział 5) nie są kolejne
+
+2. Dr. Jones nie może prezentować o 1:00 ani 10:30.
+   ✓ Jones prezentuje o 2:00
+
+3. Dr. Davis prezentuje dokładnie 2 przedziały czasowe po Dr. Anderson.
+   ✓ Anderson (przedział 1), Davis (przedział 3) = 2 przedziały później
+
+4. Przedział o 10:30 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+   ✓ Anderson (A) prezentuje o 10:30
+
+5. Dr. Davis prezentuje po południu (o 1:00 lub później).
+   ✓ Davis prezentuje o 1:00
+
+6. Pomiędzy prezentacjami Dr. Hughes i Dr. Green są dokładnie 2 inne prezentacje.
+   ✓ Hughes (przedział 2), Davis (przedział 3), Jones (przedział 4), Green (przedział 5)
+   ✓ Między nimi są przedziały 3 i 4 (2 prezentacje)
+
+7. Prezentacja Dr. Hughes odbywa się rano (przed 1:00).
+   ✓ Hughes prezentuje o 9:00
+
+
+OSTATECZNY HARMONOGRAM:
+========================
+
+9:00  → Dr. Hughes
+10:30 → Dr. Anderson
+1:00  → Dr. Davis
+2:00  → Dr. Jones
+3:00  → Dr. Green
+
+
+ODPOWIEDŹ:
+==========
+Kompletny harmonogram konferencji:
+• 9:00  - Dr. Hughes
+• 10:30 - Dr. Anderson
+• 1:00  - Dr. Davis
+• 2:00  - Dr. Jones
+• 3:00  - Dr. Green
