@@ -1,0 +1,43 @@
+You are solving Test 15: Puzzle 3 in Korean.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+일곱명의 연구자—Dr. Nelson, Dr. Fischer, Dr. Evans, Dr. Ivanov, Dr. Davis, Dr. Chen, Dr. Lee—가 국제 학회에서 연구 결과를 발표할 예정입니다. 총 일곱개의 시간대가 있습니다: 오전 11:00, 오전 8:30, 오전 9:30, 오후 2:00, 오후 2:30, 오후 3:00, 오후 4:00.
+
+다음 제약 조건을 바탕으로 어떤 연구자가 어느 시간대에 발표하는지 결정하십시오:
+
+1. Dr. Davis는 8:30 또는 3:00.
+2. Dr. Lee는 일정의 전반부에 발표함.
+3. Dr. Evans는 일정의 전반부에 발표함.
+4. Dr. Fischer는 Dr. Chen바로 다음에 발표함 (연속 시간대).
+5. Dr. Evans 사이에는 정확히 Dr. Ivanov는 인접한 시간대에 발표할 수 없음.
+6. Dr. Chen 사이에는 정확히 Dr. Nelson와 3 시간대 이상 떨어져 있어야 함.
+7. Dr. Chen는 2:30 또는 9:30.
+8. Dr. Fischer 사이에는 정확히 Dr. Nelson와 3 시간대 이상 떨어져 있어야 함.
+9. Dr. Lee는 Dr. Nelson바로 다음에 발표함 (연속 시간대).
+10. Dr. Ivanov 사이에는 정확히 Dr. Nelson와 4 시간대 이상 떨어져 있어야 함.
+11. Dr. Ivanov는 일정의 후반부에 발표함.
+12. Dr. Chen 사이에는 정확히 Dr. Ivanov는 인접한 시간대에 발표할 수 없음.
+**질문:** 각 시간대와 해당 연구자를 나열한 전체 일정은 무엇입니까?
+
+중요 지침:
+1. 단계별로 완전한 추론 과정을 보여주세요
+2. 각 제약 조건을 주의 깊게 추적하세요
+3. 모든 제약 조건에 대해 최종 답변을 검증하세요
+4. 명확한 형식으로 최종 답변을 제시하세요
+
+이 퍼즐을 체계적으로 해결하십시오.
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_3_ko_response.txt
+
+BEGIN SOLVING NOW.

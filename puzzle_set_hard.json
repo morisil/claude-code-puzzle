@@ -1,0 +1,448 @@
+[
+  {
+    "id": 1,
+    "people": [
+      "Dr. Brown",
+      "Dr. Fischer",
+      "Dr. Ivanov",
+      "Dr. Nelson",
+      "Dr. Martinez",
+      "Dr. Kumar",
+      "Dr. O'Brien"
+    ],
+    "slots": [
+      "10:00",
+      "10:30",
+      "9:00",
+      "9:30",
+      "1:00",
+      "2:30",
+      "5:30"
+    ],
+    "constraints_text": [
+      "Dr. Nelson cannot present at 9:00 or 5:30.",
+      "Dr. Brown cannot present at 1:00 or 9:30.",
+      "The 9:30 slot is occupied by someone whose name starts with a vowel.",
+      "There are exactly 1 presentation(s) between Dr. Kumar and Dr. Nelson.",
+      "Dr. Fischer and Dr. Brown cannot present in adjacent time slots.",
+      "There are exactly 2 presentation(s) between Dr. Ivanov and Dr. Nelson.",
+      "Dr. Martinez presents exactly 2 time slots after Dr. Fischer.",
+      "Dr. Nelson cannot present at 10:30 or 9:30.",
+      "Dr. Kumar cannot present at 1:00 or 10:30.",
+      "Dr. Fischer must present before Dr. Kumar, but not in consecutive time slots."
+    ],
+    "solution": {
+      "10:00": "Dr. Fischer",
+      "10:30": "Dr. Ivanov",
+      "9:00": "Dr. Martinez",
+      "9:30": "Dr. O'Brien",
+      "1:00": "Dr. Nelson",
+      "2:30": "Dr. Brown",
+      "5:30": "Dr. Kumar"
+    },
+    "num_constraints": 10,
+    "attempt": 11
+  },
+  {
+    "id": 2,
+    "people": [
+      "Dr. Kumar",
+      "Dr. Lee",
+      "Dr. Davis",
+      "Dr. Patel",
+      "Dr. Jones",
+      "Dr. Evans",
+      "Dr. Anderson"
+    ],
+    "slots": [
+      "10:00",
+      "11:30",
+      "9:00",
+      "2:00",
+      "2:30",
+      "3:30",
+      "4:30"
+    ],
+    "constraints_text": [
+      "Dr. Jones must present before Dr. Patel, but not in consecutive time slots.",
+      "Dr. Anderson's presentation immediately follows Dr. Jones's presentation (consecutive slots).",
+      "Dr. Jones cannot present at 9:00 or 11:30.",
+      "Dr. Kumar cannot present at 3:30 or 4:30.",
+      "Dr. Patel presents in the afternoon (1:00 PM or later).",
+      "Dr. Evans presents exactly 2 time slots after Dr. Davis.",
+      "Dr. Evans cannot present at 2:30 or 2:00.",
+      "There are exactly 1 presentation(s) between Dr. Lee and Dr. Davis.",
+      "Dr. Anderson must present before Dr. Evans, but not in consecutive time slots.",
+      "The 4:30 slot is occupied by someone whose name starts with a vowel."
+    ],
+    "solution": {
+      "10:00": "Dr. Jones",
+      "11:30": "Dr. Anderson",
+      "9:00": "Dr. Lee",
+      "2:00": "Dr. Kumar",
+      "2:30": "Dr. Davis",
+      "3:30": "Dr. Patel",
+      "4:30": "Dr. Evans"
+    },
+    "num_constraints": 10,
+    "attempt": 91
+  },
+  {
+    "id": 3,
+    "people": [
+      "Dr. Nelson",
+      "Dr. Fischer",
+      "Dr. Evans",
+      "Dr. Ivanov",
+      "Dr. Davis",
+      "Dr. Chen",
+      "Dr. Lee"
+    ],
+    "slots": [
+      "11:00",
+      "8:30",
+      "9:30",
+      "2:00",
+      "2:30",
+      "3:00",
+      "4:00"
+    ],
+    "constraints_text": [
+      "Dr. Davis cannot present at 8:30 or 3:00.",
+      "Dr. Lee presents in the first half of the schedule.",
+      "Dr. Evans presents in the first half of the schedule.",
+      "Dr. Fischer's presentation immediately follows Dr. Chen's presentation (consecutive slots).",
+      "Dr. Evans and Dr. Ivanov cannot present in adjacent time slots.",
+      "Dr. Chen and Dr. Nelson must be at least 3 time slots apart.",
+      "Dr. Chen cannot present at 2:30 or 9:30.",
+      "Dr. Fischer and Dr. Nelson must be at least 3 time slots apart.",
+      "Dr. Lee's presentation immediately follows Dr. Nelson's presentation (consecutive slots).",
+      "Dr. Ivanov and Dr. Nelson must be at least 4 time slots apart.",
+      "Dr. Ivanov presents in the second half of the schedule.",
+      "Dr. Chen and Dr. Ivanov cannot present in adjacent time slots."
+    ],
+    "solution": {
+      "11:00": "Dr. Nelson",
+      "8:30": "Dr. Lee",
+      "9:30": "Dr. Evans",
+      "2:00": "Dr. Chen",
+      "2:30": "Dr. Fischer",
+      "3:00": "Dr. Ivanov",
+      "4:00": "Dr. Davis"
+    },
+    "num_constraints": 12,
+    "attempt": 53
+  },
+  {
+    "id": 4,
+    "people": [
+      "Dr. Fischer",
+      "Dr. Quinn",
+      "Dr. Lee",
+      "Dr. Jones",
+      "Dr. Anderson",
+      "Dr. Martinez",
+      "Dr. Evans"
+    ],
+    "slots": [
+      "10:00",
+      "11:30",
+      "8:30",
+      "9:30",
+      "1:30",
+      "2:00",
+      "2:30"
+    ],
+    "constraints_text": [
+      "Dr. Anderson and Dr. Jones cannot present in adjacent time slots.",
+      "Dr. Martinez presents exactly 2 time slots after Dr. Fischer.",
+      "There are exactly 2 presentation(s) between Dr. Fischer and Dr. Evans.",
+      "Dr. Anderson cannot present at 11:30 or 9:30.",
+      "Dr. Martinez presents in the second half of the schedule.",
+      "The 10:00 slot is occupied by someone whose name starts with a vowel.",
+      "Dr. Lee and Dr. Anderson cannot present in adjacent time slots.",
+      "The 11:30 slot is occupied by someone whose name starts with a vowel.",
+      "The 11:30 slot is occupied by someone whose name starts with a vowel.",
+      "Dr. Lee presents exactly 3 time slots after Dr. Jones."
+    ],
+    "solution": {
+      "10:00": "Dr. Anderson",
+      "11:30": "Dr. Evans",
+      "8:30": "Dr. Jones",
+      "9:30": "Dr. Quinn",
+      "1:30": "Dr. Fischer",
+      "2:00": "Dr. Lee",
+      "2:30": "Dr. Martinez"
+    },
+    "num_constraints": 10,
+    "attempt": 58
+  },
+  {
+    "id": 5,
+    "people": [
+      "Dr. Kumar",
+      "Dr. Anderson",
+      "Dr. Davis",
+      "Dr. O'Brien",
+      "Dr. Evans",
+      "Dr. Hughes",
+      "Dr. Green"
+    ],
+    "slots": [
+      "11:00",
+      "8:00",
+      "1:00",
+      "2:30",
+      "4:00",
+      "4:30",
+      "5:00"
+    ],
+    "constraints_text": [
+      "The 5:00 slot is occupied by someone whose name starts with a vowel.",
+      "The 4:30 slot is occupied by someone whose name starts with a vowel.",
+      "There are exactly 1 presentation(s) between Dr. Evans and Dr. Davis.",
+      "Dr. O'Brien presents in the second half of the schedule.",
+      "Dr. Evans and Dr. Hughes must be at least 4 time slots apart.",
+      "The 4:30 slot is occupied by someone whose name starts with a vowel.",
+      "Dr. O'Brien presents exactly 4 time slots after Dr. Hughes.",
+      "Dr. Green must present before Dr. Kumar, but not in consecutive time slots.",
+      "The 1:00 slot is occupied by someone whose name starts with a vowel.",
+      "Dr. O'Brien cannot present at 5:00 or 11:00."
+    ],
+    "solution": {
+      "11:00": "Dr. Green",
+      "8:00": "Dr. Hughes",
+      "1:00": "Dr. Anderson",
+      "2:30": "Dr. Kumar",
+      "4:00": "Dr. Davis",
+      "4:30": "Dr. O'Brien",
+      "5:00": "Dr. Evans"
+    },
+    "num_constraints": 10,
+    "attempt": 30
+  },
+  {
+    "id": 6,
+    "people": [
+      "Dr. Evans",
+      "Dr. Davis",
+      "Dr. Green",
+      "Dr. Lee",
+      "Dr. O'Brien",
+      "Dr. Anderson",
+      "Dr. Jones"
+    ],
+    "slots": [
+      "11:30",
+      "8:30",
+      "1:00",
+      "2:00",
+      "3:30",
+      "5:00",
+      "5:30"
+    ],
+    "constraints_text": [
+      "Dr. O'Brien presents in the first half of the schedule.",
+      "Dr. Evans and Dr. Lee must be at least 4 time slots apart.",
+      "Dr. Evans cannot present at 8:30 or 3:30.",
+      "The 5:00 slot is occupied by someone whose name starts with a vowel.",
+      "Dr. Davis presents in the afternoon (1:00 PM or later).",
+      "Dr. Anderson presents exactly 3 time slots after Dr. O'Brien.",
+      "Dr. O'Brien must present before Dr. Evans, but not in consecutive time slots.",
+      "The 11:30 slot is occupied by someone whose name starts with a vowel.",
+      "Dr. Green cannot present at 5:30 or 5:00.",
+      "Dr. Anderson's presentation immediately follows Dr. Jones's presentation (consecutive slots)."
+    ],
+    "solution": {
+      "11:30": "Dr. O'Brien",
+      "8:30": "Dr. Lee",
+      "1:00": "Dr. Jones",
+      "2:00": "Dr. Anderson",
+      "3:30": "Dr. Green",
+      "5:00": "Dr. Evans",
+      "5:30": "Dr. Davis"
+    },
+    "num_constraints": 10,
+    "attempt": 52
+  },
+  {
+    "id": 7,
+    "people": [
+      "Dr. Lee",
+      "Dr. Evans",
+      "Dr. Anderson",
+      "Dr. Kumar",
+      "Dr. Nelson",
+      "Dr. Jones",
+      "Dr. Brown"
+    ],
+    "slots": [
+      "10:30",
+      "11:30",
+      "8:00",
+      "9:30",
+      "1:30",
+      "3:30",
+      "4:00"
+    ],
+    "constraints_text": [
+      "The 9:30 slot is occupied by someone whose name starts with a vowel.",
+      "Dr. Jones presents in the first half of the schedule.",
+      "There are exactly 2 presentation(s) between Dr. Kumar and Dr. Evans.",
+      "There are exactly 1 presentation(s) between Dr. Evans and Dr. Jones.",
+      "There are exactly 1 presentation(s) between Dr. Lee and Dr. Jones.",
+      "Dr. Brown cannot present at 4:00 or 11:30.",
+      "Dr. Kumar must present before Dr. Nelson, but not in consecutive time slots.",
+      "Dr. Anderson cannot present at 10:30 or 4:00.",
+      "Dr. Kumar and Dr. Brown must be at least 4 time slots apart.",
+      "Dr. Kumar presents in the morning (before 1:00 PM).",
+      "The 1:30 slot is occupied by someone whose name starts with a vowel."
+    ],
+    "solution": {
+      "10:30": "Dr. Lee",
+      "11:30": "Dr. Kumar",
+      "8:00": "Dr. Jones",
+      "9:30": "Dr. Anderson",
+      "1:30": "Dr. Evans",
+      "3:30": "Dr. Brown",
+      "4:00": "Dr. Nelson"
+    },
+    "num_constraints": 11,
+    "attempt": 36
+  },
+  {
+    "id": 8,
+    "people": [
+      "Dr. Kumar",
+      "Dr. O'Brien",
+      "Dr. Lee",
+      "Dr. Brown",
+      "Dr. Ivanov",
+      "Dr. Nelson",
+      "Dr. Chen"
+    ],
+    "slots": [
+      "10:00",
+      "11:30",
+      "8:00",
+      "9:00",
+      "1:00",
+      "3:00",
+      "5:30"
+    ],
+    "constraints_text": [
+      "The 3:00 slot is occupied by someone whose name starts with a vowel.",
+      "Dr. Ivanov cannot present at 5:30 or 9:00.",
+      "Dr. Chen must present before Dr. Nelson, but not in consecutive time slots.",
+      "Dr. Nelson presents exactly 2 time slots after Dr. Brown.",
+      "Dr. Kumar's presentation immediately follows Dr. O'Brien's presentation (consecutive slots).",
+      "Dr. Chen presents in the morning (before 1:00 PM).",
+      "Dr. Chen cannot present at 9:00 or 10:00.",
+      "Dr. Chen and Dr. Ivanov cannot present in adjacent time slots.",
+      "Dr. Chen cannot present at 10:00 or 11:30.",
+      "Dr. Ivanov presents in the afternoon (1:00 PM or later)."
+    ],
+    "solution": {
+      "10:00": "Dr. O'Brien",
+      "11:30": "Dr. Kumar",
+      "8:00": "Dr. Chen",
+      "9:00": "Dr. Lee",
+      "1:00": "Dr. Brown",
+      "3:00": "Dr. Ivanov",
+      "5:30": "Dr. Nelson"
+    },
+    "num_constraints": 10,
+    "attempt": 1
+  },
+  {
+    "id": 9,
+    "people": [
+      "Dr. Ivanov",
+      "Dr. Martinez",
+      "Dr. Quinn",
+      "Dr. Hughes",
+      "Dr. Chen",
+      "Dr. O'Brien",
+      "Dr. Lee"
+    ],
+    "slots": [
+      "10:00",
+      "10:30",
+      "8:30",
+      "2:30",
+      "3:30",
+      "4:30",
+      "5:00"
+    ],
+    "constraints_text": [
+      "The 10:30 slot is occupied by someone whose name starts with a vowel.",
+      "Dr. Ivanov presents in the second half of the schedule.",
+      "Dr. Martinez's presentation immediately follows Dr. O'Brien's presentation (consecutive slots).",
+      "Dr. Ivanov cannot present at 2:30 or 10:30.",
+      "Dr. Quinn presents exactly 2 time slots after Dr. Ivanov.",
+      "Dr. Lee cannot present at 5:00 or 3:30.",
+      "There are exactly 3 presentation(s) between Dr. Ivanov and Dr. Chen.",
+      "Dr. O'Brien and Dr. Hughes cannot present in adjacent time slots.",
+      "Dr. O'Brien must present before Dr. Ivanov, but not in consecutive time slots.",
+      "Dr. Chen and Dr. Ivanov cannot present in adjacent time slots.",
+      "Dr. Martinez and Dr. Lee cannot present in adjacent time slots."
+    ],
+    "solution": {
+      "10:00": "Dr. Chen",
+      "10:30": "Dr. O'Brien",
+      "8:30": "Dr. Martinez",
+      "2:30": "Dr. Hughes",
+      "3:30": "Dr. Ivanov",
+      "4:30": "Dr. Lee",
+      "5:00": "Dr. Quinn"
+    },
+    "num_constraints": 11,
+    "attempt": 131
+  },
+  {
+    "id": 10,
+    "people": [
+      "Dr. Evans",
+      "Dr. Hughes",
+      "Dr. Green",
+      "Dr. Ivanov",
+      "Dr. Lee",
+      "Dr. Anderson",
+      "Dr. Davis"
+    ],
+    "slots": [
+      "10:00",
+      "11:00",
+      "9:00",
+      "2:30",
+      "3:00",
+      "4:00",
+      "5:30"
+    ],
+    "constraints_text": [
+      "Dr. Hughes presents in the second half of the schedule.",
+      "Dr. Hughes presents in the second half of the schedule.",
+      "Dr. Lee and Dr. Evans must be at least 4 time slots apart.",
+      "Dr. Ivanov and Dr. Green cannot present in adjacent time slots.",
+      "Dr. Green must present before Dr. Ivanov, but not in consecutive time slots.",
+      "Dr. Green and Dr. Evans must be at least 4 time slots apart.",
+      "Dr. Davis must present before Dr. Ivanov, but not in consecutive time slots.",
+      "Dr. Green cannot present at 9:00 or 10:00.",
+      "The 11:00 slot is occupied by someone whose name starts with a vowel.",
+      "Dr. Green's presentation immediately follows Dr. Hughes's presentation (consecutive slots).",
+      "There are exactly 2 presentation(s) between Dr. Hughes and Dr. Ivanov.",
+      "Dr. Lee presents in the second half of the schedule."
+    ],
+    "solution": {
+      "10:00": "Dr. Evans",
+      "11:00": "Dr. Anderson",
+      "9:00": "Dr. Davis",
+      "2:30": "Dr. Hughes",
+      "3:00": "Dr. Green",
+      "4:00": "Dr. Lee",
+      "5:30": "Dr. Ivanov"
+    },
+    "num_constraints": 12,
+    "attempt": 5
+  }
+]

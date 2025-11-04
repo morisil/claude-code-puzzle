@@ -1,0 +1,41 @@
+You are solving Test 23: Puzzle 5 in Simplified Chinese.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+七位研究人员——Dr. Kumar、Dr. Anderson、Dr. Davis、Dr. O'Brien、Dr. Evans、Dr. Hughes、Dr. Green——计划在一次国际会议上展示他们的研究成果。会议共有七个时间段：上午11:00、上午8:00、下午1:00、下午2:30、下午4:00、下午4:30、下午5:00。
+
+根据以下约束条件,确定每位研究人员在哪个时间段进行演讲:
+
+1. 5:00的时间段由姓氏以元音字母开头的人占据.
+2. 4:30的时间段由姓氏以元音字母开头的人占据.
+3. 1和Dr. Evans博士Dr. Davis.
+4. Dr. O'Brien在日程的后半部分演讲.
+5. Dr. Evans博士Dr. Hughes必须相隔至少4个时间段.
+6. 4:30的时间段由姓氏以元音字母开头的人占据.
+7. Dr. O'Brien的演讲时间恰好比4晚Dr. Hughes.
+8. Dr. Green必须在Dr. Kumar之前演讲,但不能在连续的时间段.
+9. 1:00的时间段由姓氏以元音字母开头的人占据.
+10. Dr. O'Brien不能在5:00或11:00.
+**问题:** 完整的日程安排是什么?请列出每个时间段及对应的研究人员。
+
+重要说明:
+1. 展示完整的逐步推理过程
+2. 仔细跟踪每个约束条件
+3. 针对所有约束条件验证最终答案
+4. 以清晰的格式呈现最终答案
+
+请系统地解决这个谜题。
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_5_zh-CN_response.txt
+
+BEGIN SOLVING NOW.

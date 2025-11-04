@@ -1,0 +1,25 @@
+Seven researchers—Dr. Evans, Dr. Hughes, Dr. Green, Dr. Ivanov, Dr. Lee, Dr. Anderson, and Dr. Davis—are scheduled to present their findings at an international conference. There are exactly seven time slots: 10:00 AM, 11:00 AM, 9:00 AM, 2:30 PM, 3:00 PM, 4:00 PM, and 5:30 PM.
+
+Based on the following constraints, determine which researcher presents at which time:
+
+1. Dr. Hughes presents in the second half of the schedule.
+2. Dr. Hughes presents in the second half of the schedule.
+3. Dr. Lee and Dr. Evans must be at least 4 time slots apart.
+4. Dr. Ivanov and Dr. Green cannot present in adjacent time slots.
+5. Dr. Green must present before Dr. Ivanov, but not in consecutive time slots.
+6. Dr. Green and Dr. Evans must be at least 4 time slots apart.
+7. Dr. Davis must present before Dr. Ivanov, but not in consecutive time slots.
+8. Dr. Green cannot present at 9:00 or 10:00.
+9. The 11:00 slot is occupied by someone whose name starts with a vowel.
+10. Dr. Green's presentation immediately follows Dr. Hughes's presentation (consecutive slots).
+11. There are exactly 2 presentation(s) between Dr. Hughes and Dr. Ivanov.
+12. Dr. Lee presents in the second half of the schedule.
+**Question:** What is the complete schedule, listing each time slot with the corresponding researcher?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Present your final answer in a clear format
+
+Please solve this puzzle systematically.

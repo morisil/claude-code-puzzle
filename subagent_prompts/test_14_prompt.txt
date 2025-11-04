@@ -1,0 +1,43 @@
+You are solving Test 14: Puzzle 3 in Traditional Chinese.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+七位研究人員——Dr. Nelson、Dr. Fischer、Dr. Evans、Dr. Ivanov、Dr. Davis、Dr. Chen、Dr. Lee——計劃在一次國際會議上展示他們的研究成果。會議共有七個時間段：上午11:00、上午8:30、上午9:30、下午2:00、下午2:30、下午3:00、下午4:00。
+
+根據以下約束條件,確定每位研究人員在哪個時間段進行演講:
+
+1. Dr. Davis不能在8:30或3:00.
+2. Dr. Lee在日程的前半部分演講.
+3. Dr. Evans在日程的前半部分演講.
+4. Dr. Fischer的演講緊接在Dr. Chen的演講之後(連續時間段).
+5. Dr. Evans博士Dr. Ivanov不能在相鄰的時間段演講.
+6. Dr. Chen博士Dr. Nelson必須相隔至少3個時間段.
+7. Dr. Chen不能在2:30或9:30.
+8. Dr. Fischer博士Dr. Nelson必須相隔至少3個時間段.
+9. Dr. Lee的演講緊接在Dr. Nelson的演講之後(連續時間段).
+10. Dr. Ivanov博士Dr. Nelson必須相隔至少4個時間段.
+11. Dr. Ivanov在日程的後半部分演講.
+12. Dr. Chen博士Dr. Ivanov不能在相鄰的時間段演講.
+**問題:** 完整的日程安排是什麼?請列出每個時間段及對應的研究人員。
+
+重要說明:
+1. 展示完整的逐步推理過程
+2. 仔細跟蹤每個約束條件
+3. 針對所有約束條件驗證最終答案
+4. 以清晰的格式呈現最終答案
+
+請系統地解決這個謎題。
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_3_zh-TW_response.txt
+
+BEGIN SOLVING NOW.

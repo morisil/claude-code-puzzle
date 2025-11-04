@@ -1,0 +1,42 @@
+You are solving Test 32: Puzzle 7 in Polish.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+Siedmioro naukowców—Dr. Lee, Dr. Evans, Dr. Anderson, Dr. Kumar, Dr. Nelson, Dr. Jones i Dr. Brown—ma zaprezentować swoje odkrycia na międzynarodowej konferencji. Dostępnych jest dokładnie siedem przedziałów czasowych: 10:30, 11:30, 8:00, 9:30, 1:30, 3:30 i 4:00.
+
+Na podstawie poniższych ograniczeń określ, który naukowiec prezentuje o której godzinie:
+
+1. Przedział o 9:30 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+2. Dr. Jones prezentuje w pierwszej połowie harmonogramu.
+3. Pomiędzy prezentacjami 2 i Dr. Kumar jest dokładnie Dr. Evans.
+4. Pomiędzy prezentacjami 1 i Dr. Evans jest dokładnie Dr. Jones.
+5. Pomiędzy prezentacjami 1 i Dr. Lee jest dokładnie Dr. Jones.
+6. Dr. Brown nie może prezentować o 4:00 ani 11:30.
+7. Dr. Kumar musi prezentować przed Dr. Nelson, ale nie w kolejnych przedziałach czasowych.
+8. Dr. Anderson nie może prezentować o 10:30 ani 4:00.
+9. Dr. Kumar jest dokładnie Dr. Brown muszą być oddalone o co najmniej 4 przedziały czasowe.
+10. Dr. Kumar prezentuje rano (przed 13:00).
+11. Przedział o 1:30 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski.
+**Pytanie:** Jaki jest kompletny harmonogram, wymieniający każdy przedział czasowy z odpowiadającym mu naukowcem?
+
+WAŻNE INSTRUKCJE:
+1. Pokaż kompletny proces rozumowania krok po kroku
+2. Śledź każde ograniczenie uważnie
+3. Zweryfikuj swoją ostateczną odpowiedź względem WSZYSTKICH ograniczeń
+4. Przedstaw swoją ostateczną odpowiedź w przejrzystym formacie
+
+Proszę rozwiązać tę zagadkę systematycznie.
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_7_pl_response.txt
+
+BEGIN SOLVING NOW.

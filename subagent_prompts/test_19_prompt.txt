@@ -1,0 +1,41 @@
+You are solving Test 19: Puzzle 4 in Traditional Chinese.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+七位研究人員——Dr. Fischer、Dr. Quinn、Dr. Lee、Dr. Jones、Dr. Anderson、Dr. Martinez、Dr. Evans——計劃在一次國際會議上展示他們的研究成果。會議共有七個時間段：上午10:00、上午11:30、上午8:30、上午9:30、下午1:30、下午2:00、下午2:30。
+
+根據以下約束條件,確定每位研究人員在哪個時間段進行演講:
+
+1. Dr. Anderson博士Dr. Jones不能在相鄰的時間段演講.
+2. Dr. Martinez的演講時間恰好比2晚Dr. Fischer.
+3. 2和Dr. Fischer博士Dr. Evans.
+4. Dr. Anderson不能在11:30或9:30.
+5. Dr. Martinez在日程的後半部分演講.
+6. 10:00的時間段由姓氏以元音字母開頭的人佔據.
+7. Dr. Lee博士Dr. Anderson不能在相鄰的時間段演講.
+8. 11:30的時間段由姓氏以元音字母開頭的人佔據.
+9. 11:30的時間段由姓氏以元音字母開頭的人佔據.
+10. Dr. Lee的演講時間恰好比3晚Dr. Jones.
+**問題:** 完整的日程安排是什麼?請列出每個時間段及對應的研究人員。
+
+重要說明:
+1. 展示完整的逐步推理過程
+2. 仔細跟蹤每個約束條件
+3. 針對所有約束條件驗證最終答案
+4. 以清晰的格式呈現最終答案
+
+請系統地解決這個謎題。
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_4_zh-TW_response.txt
+
+BEGIN SOLVING NOW.

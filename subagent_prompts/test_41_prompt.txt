@@ -1,0 +1,42 @@
+You are solving Test 41: Puzzle 9 in English.
+
+This is a constraint satisfaction puzzle. Read the prompt carefully and solve it systematically.
+
+===== PUZZLE PROMPT =====
+Seven researchers—Dr. Ivanov, Dr. Martinez, Dr. Quinn, Dr. Hughes, Dr. Chen, Dr. O'Brien, and Dr. Lee—are scheduled to present their findings at an international conference. There are exactly seven time slots: 10:00 AM, 10:30 AM, 8:30 AM, 2:30 PM, 3:30 PM, 4:30 PM, and 5:00 PM.
+
+Based on the following constraints, determine which researcher presents at which time:
+
+1. The 10:30 slot is occupied by someone whose name starts with a vowel.
+2. Dr. Ivanov presents in the second half of the schedule.
+3. Dr. Martinez's presentation immediately follows Dr. O'Brien's presentation (consecutive slots).
+4. Dr. Ivanov cannot present at 2:30 or 10:30.
+5. Dr. Quinn presents exactly 2 time slots after Dr. Ivanov.
+6. Dr. Lee cannot present at 5:00 or 3:30.
+7. There are exactly 3 presentation(s) between Dr. Ivanov and Dr. Chen.
+8. Dr. O'Brien and Dr. Hughes cannot present in adjacent time slots.
+9. Dr. O'Brien must present before Dr. Ivanov, but not in consecutive time slots.
+10. Dr. Chen and Dr. Ivanov cannot present in adjacent time slots.
+11. Dr. Martinez and Dr. Lee cannot present in adjacent time slots.
+**Question:** What is the complete schedule, listing each time slot with the corresponding researcher?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Present your final answer in a clear format
+
+Please solve this puzzle systematically.
+
+===== END PUZZLE PROMPT =====
+
+INSTRUCTIONS FOR YOU:
+1. Read and understand all constraints carefully
+2. Solve the puzzle step by step
+3. Show your reasoning process
+4. Verify your solution against all constraints
+5. Present your final answer clearly
+
+Your response will be saved to: /home/user/claude-code-puzzle/hard_test_responses/puzzle_9_en_response.txt
+
+BEGIN SOLVING NOW.

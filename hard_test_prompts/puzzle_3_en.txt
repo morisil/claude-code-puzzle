@@ -1,0 +1,25 @@
+Seven researchers—Dr. Nelson, Dr. Fischer, Dr. Evans, Dr. Ivanov, Dr. Davis, Dr. Chen, and Dr. Lee—are scheduled to present their findings at an international conference. There are exactly seven time slots: 11:00 AM, 8:30 AM, 9:30 AM, 2:00 PM, 2:30 PM, 3:00 PM, and 4:00 PM.
+
+Based on the following constraints, determine which researcher presents at which time:
+
+1. Dr. Davis cannot present at 8:30 or 3:00.
+2. Dr. Lee presents in the first half of the schedule.
+3. Dr. Evans presents in the first half of the schedule.
+4. Dr. Fischer's presentation immediately follows Dr. Chen's presentation (consecutive slots).
+5. Dr. Evans and Dr. Ivanov cannot present in adjacent time slots.
+6. Dr. Chen and Dr. Nelson must be at least 3 time slots apart.
+7. Dr. Chen cannot present at 2:30 or 9:30.
+8. Dr. Fischer and Dr. Nelson must be at least 3 time slots apart.
+9. Dr. Lee's presentation immediately follows Dr. Nelson's presentation (consecutive slots).
+10. Dr. Ivanov and Dr. Nelson must be at least 4 time slots apart.
+11. Dr. Ivanov presents in the second half of the schedule.
+12. Dr. Chen and Dr. Ivanov cannot present in adjacent time slots.
+**Question:** What is the complete schedule, listing each time slot with the corresponding researcher?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Present your final answer in a clear format
+
+Please solve this puzzle systematically.
