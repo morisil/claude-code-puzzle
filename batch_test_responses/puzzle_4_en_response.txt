@@ -1,0 +1,99 @@
+LOGIC PUZZLE SOLUTION: Conference Presentation Schedule
+
+PROBLEM SETUP:
+================
+Researchers: Dr. Brown, Dr. Ivanov, Dr. Davis, Dr. Evans, Dr. Chen
+Time Slots: 10:00 AM, 10:30 AM, 3:00 PM, 3:30 PM, 4:30 PM
+(Let's number them: Slot 1, 2, 3, 4, 5 respectively)
+
+STEP-BY-STEP REASONING:
+========================
+
+STEP 1: Analyze the most restrictive constraints
+-------------------------------------------------
+Constraint 3: Dr. Evans presents exactly 3 time slots after Dr. Chen
+- If Chen is in slot 1 → Evans is in slot 4
+- If Chen is in slot 2 → Evans is in slot 5
+- Chen cannot be in slot 3+ (Evans would exceed slot 5)
+
+Constraint 7: Dr. Chen's presentation is in the morning (before 1:00 PM)
+- Chen must be in slot 1 (10:00 AM) or slot 2 (10:30 AM)
+
+This gives us TWO CASES to explore:
+- Case A: Chen in slot 1, Evans in slot 4
+- Case B: Chen in slot 2, Evans in slot 5
+
+STEP 2: Evaluate Case A (Chen in slot 1, Evans in slot 4)
+----------------------------------------------------------
+Constraint 4: The 3:30 PM slot (slot 4) must have someone whose name starts with a vowel
+- Evans starts with 'E' (a vowel) ✓
+- This constraint is satisfied in Case A
+
+Constraint 5: Dr. Ivanov presents in the afternoon (slots 3, 4, or 5)
+- Slot 4 is taken by Evans
+- Ivanov must be in slot 3 or slot 5
+
+Constraint 6: Exactly 2 presentations between Dr. Ivanov and Dr. Davis
+- If Ivanov is in slot 5, Davis must be in slot 2 (slots 3 & 4 between them) ✓
+- If Ivanov is in slot 3, there's no valid position for Davis
+
+So in Case A:
+- Slot 1: Chen
+- Slot 2: Davis
+- Slot 4: Evans
+- Slot 5: Ivanov
+- Slot 3: Brown (only remaining person)
+
+Verify all constraints for Case A:
+1. Brown (slot 3) before Ivanov (slot 5), not consecutive ✓ (slot 4 is between them)
+2. Davis (slot 2) not at 4:30 or 10:00 ✓
+3. Evans (slot 4) exactly 3 slots after Chen (slot 1) ✓
+4. Slot 4 (3:30 PM) has Evans (starts with 'E', a vowel) ✓
+5. Ivanov (slot 5, 4:30 PM) in afternoon ✓
+6. 2 presentations between Ivanov (slot 5) and Davis (slot 2): Brown and Evans ✓
+7. Chen (slot 1, 10:00 AM) in morning ✓
+
+ALL CONSTRAINTS SATISFIED! ✓
+
+STEP 3: Evaluate Case B (Chen in slot 2, Evans in slot 5)
+----------------------------------------------------------
+Constraint 4: Slot 4 (3:30 PM) must have someone whose name starts with a vowel
+- Remaining people: Brown, Ivanov, Davis
+- Only Ivanov starts with a vowel (I)
+- So Ivanov must be in slot 4
+
+Constraint 6: Exactly 2 presentations between Ivanov (slot 4) and Davis
+- Davis must be in slot 1 (slots 2 & 3 between them)
+
+So in Case B:
+- Slot 1: Davis
+- Slot 2: Chen
+- Slot 4: Ivanov
+- Slot 5: Evans
+- Slot 3: Brown
+
+Verify Constraint 2: Davis cannot present at 4:30 or 10:00
+- Davis is in slot 1 (10:00 AM) ✗
+- CONSTRAINT VIOLATED!
+
+Case B is INVALID.
+
+FINAL ANSWER:
+=============
+10:00 AM - Dr. Chen
+10:30 AM - Dr. Davis
+3:00 PM  - Dr. Brown
+3:30 PM  - Dr. Evans
+4:30 PM  - Dr. Ivanov
+
+VERIFICATION OF FINAL ANSWER:
+==============================
+1. Dr. Brown (3:00 PM) before Dr. Ivanov (4:30 PM), not consecutive ✓
+2. Dr. Davis (10:30 AM) not at 4:30 or 10:00 ✓
+3. Dr. Evans (3:30 PM, slot 4) exactly 3 slots after Dr. Chen (10:00 AM, slot 1) ✓
+4. 3:30 PM slot occupied by Dr. Evans (starts with vowel 'E') ✓
+5. Dr. Ivanov (4:30 PM) presents in afternoon ✓
+6. Exactly 2 presentations between Dr. Ivanov and Dr. Davis (Brown at 3:00 PM and Evans at 3:30 PM) ✓
+7. Dr. Chen (10:00 AM) presents in morning ✓
+
+All constraints verified. Solution is complete and correct.

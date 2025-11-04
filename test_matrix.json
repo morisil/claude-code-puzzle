@@ -1,0 +1,182 @@
+[
+  {
+    "test_id": 1,
+    "puzzle_id": 1,
+    "language_code": "en",
+    "language_name": "English",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_1_en.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_1_en_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 2,
+    "puzzle_id": 1,
+    "language_code": "pl",
+    "language_name": "Polish",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_1_pl.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_1_pl_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 3,
+    "puzzle_id": 1,
+    "language_code": "zh-CN",
+    "language_name": "Simplified Chinese",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_1_zh-CN.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_1_zh-CN_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 4,
+    "puzzle_id": 1,
+    "language_code": "zh-TW",
+    "language_name": "Traditional Chinese",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_1_zh-TW.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_1_zh-TW_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 5,
+    "puzzle_id": 2,
+    "language_code": "en",
+    "language_name": "English",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_2_en.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_2_en_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 6,
+    "puzzle_id": 2,
+    "language_code": "pl",
+    "language_name": "Polish",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_2_pl.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_2_pl_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 7,
+    "puzzle_id": 2,
+    "language_code": "zh-CN",
+    "language_name": "Simplified Chinese",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_2_zh-CN.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_2_zh-CN_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 8,
+    "puzzle_id": 2,
+    "language_code": "zh-TW",
+    "language_name": "Traditional Chinese",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_2_zh-TW.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_2_zh-TW_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 9,
+    "puzzle_id": 3,
+    "language_code": "en",
+    "language_name": "English",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_3_en.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_3_en_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 10,
+    "puzzle_id": 3,
+    "language_code": "pl",
+    "language_name": "Polish",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_3_pl.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_3_pl_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 11,
+    "puzzle_id": 3,
+    "language_code": "zh-CN",
+    "language_name": "Simplified Chinese",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_3_zh-CN.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_3_zh-CN_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 12,
+    "puzzle_id": 3,
+    "language_code": "zh-TW",
+    "language_name": "Traditional Chinese",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_3_zh-TW.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_3_zh-TW_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 13,
+    "puzzle_id": 4,
+    "language_code": "en",
+    "language_name": "English",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_4_en.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_4_en_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 14,
+    "puzzle_id": 4,
+    "language_code": "pl",
+    "language_name": "Polish",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_4_pl.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_4_pl_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 15,
+    "puzzle_id": 4,
+    "language_code": "zh-CN",
+    "language_name": "Simplified Chinese",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_4_zh-CN.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_4_zh-CN_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 16,
+    "puzzle_id": 4,
+    "language_code": "zh-TW",
+    "language_name": "Traditional Chinese",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_4_zh-TW.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_4_zh-TW_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 17,
+    "puzzle_id": 5,
+    "language_code": "en",
+    "language_name": "English",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_5_en.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_5_en_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 18,
+    "puzzle_id": 5,
+    "language_code": "pl",
+    "language_name": "Polish",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_5_pl.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_5_pl_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 19,
+    "puzzle_id": 5,
+    "language_code": "zh-CN",
+    "language_name": "Simplified Chinese",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_5_zh-CN.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_5_zh-CN_response.txt",
+    "status": "pending"
+  },
+  {
+    "test_id": 20,
+    "puzzle_id": 5,
+    "language_code": "zh-TW",
+    "language_name": "Traditional Chinese",
+    "prompt_file": "/home/user/claude-code-puzzle/batch_test_prompts/puzzle_5_zh-TW.txt",
+    "response_file": "/home/user/claude-code-puzzle/batch_test_responses/puzzle_5_zh-TW_response.txt",
+    "status": "pending"
+  }
+]

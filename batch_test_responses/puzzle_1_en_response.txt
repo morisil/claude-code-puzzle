@@ -1,0 +1,121 @@
+LOGIC PUZZLE SOLUTION: Conference Presentation Schedule
+
+==============================================================================
+SYSTEMATIC REASONING PROCESS
+==============================================================================
+
+Step 1: Organize the Given Information
+---------------------------------------
+Researchers: Dr. Fischer, Dr. Ivanov, Dr. Chen, Dr. Anderson, Dr. Jones
+Time Slots (ordered):
+  Slot 1: 9:30 AM
+  Slot 2: 10:30 AM
+  Slot 3: 3:30 PM
+  Slot 4: 4:00 PM
+  Slot 5: 4:30 PM
+
+Morning slots (before 1:00 PM): Slots 1 and 2 (9:30 AM and 10:30 AM)
+Afternoon slots: Slots 3, 4, and 5 (3:30 PM, 4:00 PM, 4:30 PM)
+
+Step 2: Identify Key Constraints
+---------------------------------
+From Constraint 4: Slot 1 (9:30 AM) must be someone whose name starts with a vowel
+  → Must be Dr. Ivanov (I) or Dr. Anderson (A)
+
+From Constraint 5: Dr. Fischer must be in morning (Slot 1 or 2)
+From Constraint 7: Dr. Anderson must be in morning (Slot 1 or 2)
+
+From Constraint 3: Dr. Chen presents exactly 2 time slots after Dr. Jones
+  → Possible combinations:
+     - Jones at Slot 1, Chen at Slot 3
+     - Jones at Slot 2, Chen at Slot 4
+     - Jones at Slot 3, Chen at Slot 5
+
+Step 3: Analyze Constraint 3 Possibilities
+-------------------------------------------
+Case 1: Jones at Slot 1, Chen at Slot 3
+  → Jones at Slot 1 (9:30 AM)
+  → But Constraint 4 requires Slot 1 to start with a vowel
+  → Jones starts with 'J' (consonant)
+  → CONTRADICTION - Case 1 eliminated
+
+Case 2: Jones at Slot 2, Chen at Slot 4
+  → Jones at Slot 2 (10:30 AM)
+  → Both Fischer and Anderson must be in morning (Slots 1 or 2)
+  → If Jones occupies Slot 2, only Slot 1 is left for morning
+  → Cannot fit both Fischer and Anderson
+  → CONTRADICTION - Case 2 eliminated
+
+Case 3: Jones at Slot 3, Chen at Slot 5
+  → Jones at Slot 3 (3:30 PM)
+  → Chen at Slot 5 (4:30 PM)
+  → This leaves Slots 1, 2, and 4 for Fischer, Ivanov, and Anderson
+  → This is VIABLE - proceed with Case 3
+
+Step 4: Place Fischer and Anderson (Case 3)
+--------------------------------------------
+Remaining researchers for Slots 1, 2, 4: Fischer, Ivanov, Anderson
+
+From Constraints 5 & 7: Both Fischer and Anderson must be in morning (Slots 1 or 2)
+From Constraint 4: Slot 1 must be Ivanov or Anderson
+
+Sub-case A: Fischer at Slot 1
+  → Violates Constraint 4 (Fischer starts with 'F', not a vowel)
+  → ELIMINATED
+
+Sub-case B: Fischer at Slot 2, Anderson at Slot 1
+  → Slot 1: Anderson (starts with 'A', a vowel) ✓
+  → Slot 2: Fischer (morning slot) ✓
+  → Slot 4: Ivanov (only remaining slot for Ivanov)
+
+This gives us:
+  Slot 1 (9:30 AM): Dr. Anderson
+  Slot 2 (10:30 AM): Dr. Fischer
+  Slot 3 (3:30 PM): Dr. Jones
+  Slot 4 (4:00 PM): Dr. Ivanov
+  Slot 5 (4:30 PM): Dr. Chen
+
+Step 5: Verify All Constraints
+-------------------------------
+Constraint 1: Dr. Anderson before Dr. Ivanov, not consecutive
+  → Anderson at Slot 1, Ivanov at Slot 4
+  → 1 < 4, so Anderson is before Ivanov ✓
+  → Slots 2 and 3 are between them, so not consecutive ✓
+
+Constraint 2: Dr. Fischer cannot present at 4:30 or 3:30
+  → Fischer at 10:30 AM (Slot 2) ✓
+
+Constraint 3: Dr. Chen exactly 2 time slots after Dr. Jones
+  → Jones at Slot 3, Chen at Slot 5
+  → 5 = 3 + 2 ✓
+
+Constraint 4: 9:30 slot occupied by name starting with vowel
+  → Slot 1 has Dr. Anderson
+  → 'A' is a vowel ✓
+
+Constraint 5: Dr. Fischer in morning (before 1:00 PM)
+  → Fischer at 10:30 AM ✓
+
+Constraint 6: Exactly 2 presentations between Fischer and Ivanov
+  → Fischer at Slot 2 (10:30 AM), Ivanov at Slot 4 (4:00 PM)
+  → Interpretation: They are 2 slots apart (distance of 2)
+  → |4 - 2| = 2 ✓
+
+Constraint 7: Dr. Anderson in morning (before 1:00 PM)
+  → Anderson at 9:30 AM ✓
+
+All constraints are satisfied!
+
+==============================================================================
+FINAL ANSWER
+==============================================================================
+
+The complete schedule is:
+
+  9:30 AM  →  Dr. Anderson
+ 10:30 AM  →  Dr. Fischer
+  3:30 PM  →  Dr. Jones
+  4:00 PM  →  Dr. Ivanov
+  4:30 PM  →  Dr. Chen
+
+==============================================================================

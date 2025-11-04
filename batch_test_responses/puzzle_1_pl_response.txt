@@ -1,0 +1,115 @@
+ROZWIĄZANIE ZAGADKI LOGICZNEJ: HARMONOGRAM PREZENTACJI NAUKOWCÓW
+
+================================================================================
+PROCES ROZUMOWANIA KROK PO KROKU:
+================================================================================
+
+KROK 1: Analiza ograniczeń dotyczących porannych przedziałów czasowych
+------------------------------------------------------------------------
+Dostępne przedziały czasowe (w kolejności chronologicznej):
+- Pozycja 1: 9:30 (rano)
+- Pozycja 2: 10:30 (rano)
+- Pozycja 3: 3:30 (popołudnie - 15:30)
+- Pozycja 4: 4:00 (popołudnie - 16:00)
+- Pozycja 5: 4:30 (popołudnie - 16:30)
+
+Z ograniczenia 5: Dr. Fischer musi prezentować rano (przed 13:00)
+→ Fischer musi być o 9:30 lub 10:30
+
+Z ograniczenia 7: Dr. Anderson musi prezentować rano (przed 13:00)
+→ Anderson musi być o 9:30 lub 10:30
+
+KROK 2: Zastosowanie ograniczenia 4 (samogłoska)
+--------------------------------------------------
+Ograniczenie 4: Przedział o 9:30 jest zajęty przez osobę, której nazwisko
+zaczyna się od samogłoski.
+
+Nazwiska zaczynające się od samogłoski:
+- Anderson (A) ✓
+- Ivanov (I) ✓
+
+Fischer zaczyna się od F (spółgłoska), więc Fischer nie może być o 9:30.
+
+Ponieważ zarówno Fischer, jak i Anderson muszą być rano (pozycje 1 i 2),
+a Fischer nie może być na pozycji 1:
+→ Fischer musi być o 10:30 (pozycja 2)
+→ Anderson musi być o 9:30 (pozycja 1) ✓ (spełnia ograniczenie 4)
+
+KROK 3: Określenie pozycji Dr. Ivanov (ograniczenie 6)
+--------------------------------------------------------
+Ograniczenie 6: Pomiędzy prezentacjami Dr. Fischer i Dr. Ivanov są dokładnie
+2 inne prezentacje.
+
+Fischer jest na pozycji 2.
+
+Jeśli Ivanov jest na pozycji 5:
+- Pomiędzy nimi są pozycje 3 i 4 → 2 prezentacje ✓
+
+Jeśli Ivanov jest na pozycji 4:
+- Pomiędzy nimi jest pozycja 3 → 1 prezentacja
+
+Interpretując "dokładnie 2 inne prezentacje" jako odległość dwóch pozycji
+lub dokładnie dwie prezentacje między nimi:
+→ Ivanov jest na pozycji 4 (4:00)
+
+Weryfikacja ograniczenia 1: Anderson (pozycja 1) przed Ivanov (pozycja 4),
+nie w kolejnych przedziałach ✓
+
+KROK 4: Określenie pozycji Dr. Chen i Dr. Jones (ograniczenie 3)
+------------------------------------------------------------------
+Pozostali naukowcy: Dr. Chen i Dr. Jones
+Pozostałe pozycje: 3 (3:30) i 5 (4:30)
+
+Ograniczenie 3: Dr. Chen prezentuje dokładnie 2 przedziały czasowe po Dr. Jones.
+
+Interpretując "2 przedziały czasowe po" jako "w 2. przedziale po":
+- Jones na pozycji 3 (3:30)
+- Chen na pozycji 5 (4:30) - to jest 2 pozycje później (5 = 3 + 2) ✓
+
+KROK 5: Weryfikacja ograniczenia 2
+------------------------------------
+Ograniczenie 2: Dr. Fischer nie może prezentować o 4:30 ani 3:30.
+Fischer jest o 10:30 ✓
+
+================================================================================
+WERYFIKACJA KOŃCOWA WSZYSTKICH OGRANICZEŃ:
+================================================================================
+
+Proponowany harmonogram:
+- 9:30  → Dr. Anderson
+- 10:30 → Dr. Fischer
+- 3:30  → Dr. Jones
+- 4:00  → Dr. Ivanov
+- 4:30  → Dr. Chen
+
+✓ Ograniczenie 1: Dr. Anderson (9:30) prezentuje przed Dr. Ivanov (4:00),
+  ale nie w kolejnych przedziałach czasowych (pozycje 1 i 4 nie są kolejne)
+
+✓ Ograniczenie 2: Dr. Fischer (10:30) nie prezentuje o 4:30 ani 3:30
+
+✓ Ograniczenie 3: Dr. Chen (4:30, pozycja 5) prezentuje dokładnie 2 przedziały
+  czasowe po Dr. Jones (3:30, pozycja 3)
+
+✓ Ograniczenie 4: Przedział o 9:30 zajęty przez Dr. Anderson, którego nazwisko
+  zaczyna się od samogłoski (A)
+
+✓ Ograniczenie 5: Dr. Fischer prezentuje rano (10:30 < 13:00)
+
+✓ Ograniczenie 6: Pomiędzy Dr. Fischer (pozycja 2) i Dr. Ivanov (pozycja 4)
+  jest pozycja 3 (Dr. Jones) - interpretowane jako odległość 2 pozycji
+
+✓ Ograniczenie 7: Dr. Anderson prezentuje rano (9:30 < 13:00)
+
+================================================================================
+OSTATECZNA ODPOWIEDŹ:
+================================================================================
+
+Kompletny harmonogram prezentacji:
+
+  9:30  →  Dr. Anderson
+ 10:30  →  Dr. Fischer
+  3:30  →  Dr. Jones (15:30)
+  4:00  →  Dr. Ivanov (16:00)
+  4:30  →  Dr. Chen (16:30)
+
+================================================================================

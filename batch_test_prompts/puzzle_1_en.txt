@@ -1,0 +1,20 @@
+Five researchers—Dr. Fischer, Dr. Ivanov, Dr. Chen, Dr. Anderson, and Dr. Jones—are scheduled to present their findings at an international conference. There are exactly five time slots: 10:30 AM, 9:30 AM, 3:30 PM, 4:00 PM, and 4:30 PM.
+
+Based on the following constraints, determine which researcher presents at which time:
+
+1. Dr. Anderson must present before Dr. Ivanov, but not in consecutive time slots.
+2. Dr. Fischer cannot present at 4:30 or 3:30.
+3. Dr. Chen presents exactly 2 time slots after Dr. Jones.
+4. The 9:30 slot is occupied by someone whose name starts with a vowel.
+5. Dr. Fischer presents in the morning (before 1:00 PM).
+6. There are exactly 2 presentation(s) between Dr. Fischer and Dr. Ivanov.
+7. Dr. Anderson's presentation is in the morning (before 1:00 PM).
+**Question:** What is the complete schedule, listing each time slot with the corresponding researcher?
+
+IMPORTANT INSTRUCTIONS:
+1. Show your complete reasoning process step by step
+2. Track each constraint carefully
+3. Verify your final answer against ALL constraints
+4. Present your final answer in a clear format
+
+Please solve this puzzle systematically.

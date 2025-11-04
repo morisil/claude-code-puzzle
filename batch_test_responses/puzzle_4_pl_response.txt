@@ -1,0 +1,122 @@
+ROZWIĄZANIE ZAGADKI LOGICZNEJ - HARMONOGRAM KONFERENCJI
+
+==========================================
+DANE WEJŚCIOWE
+==========================================
+
+Naukowcy: Dr. Brown, Dr. Ivanov, Dr. Davis, Dr. Evans, Dr. Chen
+Przedziały czasowe: 10:00, 10:30, 3:00, 3:30, 4:30
+
+Ograniczenia:
+1. Dr. Brown musi prezentować przed Dr. Ivanov, ale nie w kolejnych przedziałach czasowych
+2. Dr. Davis nie może prezentować o 4:30 ani 10:00
+3. Dr. Evans prezentuje dokładnie 3 przedziały czasowe po Dr. Chen
+4. Przedział o 3:30 jest zajęty przez osobę, której nazwisko zaczyna się od samogłoski
+5. Dr. Ivanov prezentuje po południu (o 1:00 lub później)
+6. Pomiędzy prezentacjami Dr. Ivanov i Dr. Davis są dokładnie 2 inne prezentacje
+7. Prezentacja Dr. Chen odbywa się rano (przed 1:00)
+
+==========================================
+PROCES ROZUMOWANIA KROK PO KROKU
+==========================================
+
+KROK 1: Określenie pozycji przedziałów czasowych
+-------------------------------------------------
+Pozycja 1: 10:00 (rano)
+Pozycja 2: 10:30 (rano)
+Pozycja 3: 3:00 (popołudnie)
+Pozycja 4: 3:30 (popołudnie)
+Pozycja 5: 4:30 (popołudnie)
+
+KROK 2: Analiza ograniczenia 3 i 7
+------------------------------------
+Z ograniczenia 7: Dr. Chen prezentuje rano (przed 1:00)
+→ Dr. Chen jest na pozycji 1 (10:00) lub pozycji 2 (10:30)
+
+Z ograniczenia 3: Dr. Evans prezentuje dokładnie 3 przedziały czasowe po Dr. Chen
+→ Jeśli Chen na pozycji 1, Evans na pozycji 4
+→ Jeśli Chen na pozycji 2, Evans na pozycji 5
+
+KROK 3: Analiza ograniczenia 4
+--------------------------------
+Nazwiska zaczynające się od samogłoski: Ivanov (I), Evans (E)
+→ Pozycja 4 (3:30) musi być zajęta przez Ivanov lub Evans
+
+KROK 4: Łączenie wniosków
+--------------------------
+Scenariusz A: Chen na pozycji 1, Evans na pozycji 4
+→ To spełnia ograniczenie 4 (Evans zaczyna się na E)
+
+Scenariusz B: Chen na pozycji 2, Evans na pozycji 5
+→ Pozycja 4 musi być Ivanov (jedyna pozostała osoba z samogłoską)
+
+KROK 5: Testowanie Scenariusza A
+---------------------------------
+Pozycja 1: Chen (10:00)
+Pozycja 4: Evans (3:30)
+
+Z ograniczenia 5: Ivanov prezentuje po południu (pozycja 3, 4 lub 5)
+→ Evans zajmuje pozycję 4, więc Ivanov musi być na pozycji 3 lub 5
+
+Z ograniczenia 1: Brown przed Ivanov, ale nie w kolejnych przedziałach
+→ Jeśli Ivanov na pozycji 3, Brown musiałby być na pozycji 2
+→ Ale pozycje 2 i 3 są kolejne - NARUSZENIE!
+→ Więc Ivanov musi być na pozycji 5
+
+Z ograniczenia 6: Pomiędzy Ivanov i Davis są dokładnie 2 inne prezentacje
+→ Ivanov na pozycji 5
+→ 2 prezentacje pomiędzy = Davis na pozycji 2 (pozycje 3 i 4 są pomiędzy)
+→ Brown na pozostałej pozycji 3
+
+Układ: Pozycja 1: Chen, Pozycja 2: Davis, Pozycja 3: Brown, Pozycja 4: Evans, Pozycja 5: Ivanov
+
+KROK 6: Weryfikacja wszystkich ograniczeń dla Scenariusza A
+------------------------------------------------------------
+1. Brown (poz. 3) przed Ivanov (poz. 5), nie kolejne ✓
+2. Davis (poz. 2 = 10:30) nie jest o 4:30 ani 10:00 ✓
+3. Evans (poz. 4) dokładnie 3 przedziały po Chen (poz. 1) ✓
+4. Pozycja 4 (3:30) to Evans (E = samogłoska) ✓
+5. Ivanov (poz. 5 = 4:30) po południu ✓
+6. Pomiędzy Ivanov (poz. 5) i Davis (poz. 2) są pozycje 3 i 4 (2 prezentacje) ✓
+7. Chen (poz. 1 = 10:00) rano ✓
+
+WSZYSTKIE OGRANICZENIA SPEŁNIONE! ✓
+
+KROK 7: Testowanie Scenariusza B (dla kompletności)
+----------------------------------------------------
+Pozycja 2: Chen, Pozycja 5: Evans, Pozycja 4: Ivanov (z ograniczenia 4)
+Pozycja 1: Brown (musi być przed Ivanov, nie kolejny)
+Pozycja 3: Davis
+
+Weryfikacja ograniczenia 6:
+→ Pomiędzy Ivanov (poz. 4) i Davis (poz. 3) są 0 prezentacji
+→ Powinno być 2 prezentacje - NARUSZENIE! ✗
+
+Scenariusz B nie działa.
+
+==========================================
+OSTATECZNE ROZWIĄZANIE
+==========================================
+
+10:00 - Dr. Chen
+10:30 - Dr. Davis
+3:00  - Dr. Brown
+3:30  - Dr. Evans
+4:30  - Dr. Ivanov
+
+==========================================
+KOŃCOWA WERYFIKACJA
+==========================================
+
+✓ Ograniczenie 1: Dr. Brown (3:00) prezentuje przed Dr. Ivanov (4:30),
+                  z jednym przedziałem pomiędzy (3:30) - nie są kolejne
+✓ Ograniczenie 2: Dr. Davis prezentuje o 10:30 (nie 4:30 ani 10:00)
+✓ Ograniczenie 3: Dr. Evans (3:30) jest 3 przedziały po Dr. Chen (10:00)
+                  [10:00 → 10:30 → 3:00 → 3:30]
+✓ Ograniczenie 4: Przedział 3:30 zajmuje Dr. Evans (nazwisko zaczyna się na E)
+✓ Ograniczenie 5: Dr. Ivanov prezentuje o 4:30 (po południu)
+✓ Ograniczenie 6: Pomiędzy Dr. Ivanov (4:30) i Dr. Davis (10:30) są
+                  Dr. Brown (3:00) i Dr. Evans (3:30) - dokładnie 2 prezentacje
+✓ Ograniczenie 7: Dr. Chen prezentuje o 10:00 (rano)
+
+WSZYSTKIE OGRANICZENIA ZOSTAŁY SPEŁNIONE!

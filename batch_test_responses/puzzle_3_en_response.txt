@@ -1,0 +1,127 @@
+LOGIC PUZZLE SOLUTION: Conference Presentation Schedule
+
+=================================================================
+STEP-BY-STEP REASONING PROCESS
+=================================================================
+
+Given Information:
+- Five researchers: Dr. Green, Dr. Hughes, Dr. Anderson, Dr. Ivanov, Dr. Evans
+- Five time slots: 9:00 AM, 10:30 AM, 1:30 PM, 3:30 PM, 4:30 PM
+- Slots numbered 1-5 for reference
+
+Constraints to satisfy:
+1. Dr. Ivanov must present before Dr. Anderson, but not in consecutive time slots
+2. Dr. Green cannot present at 4:30 or 1:30
+3. Dr. Hughes presents exactly 2 time slots after Dr. Evans
+4. The 10:30 slot is occupied by someone whose name starts with a vowel
+5. Dr. Anderson presents in the afternoon (1:00 PM or later)
+6. There are exactly 2 presentation(s) between Dr. Anderson and Dr. Ivanov
+7. Dr. Evans's presentation is in the morning (before 1:00 PM)
+
+-------------------------------------------------------------------
+STEP 1: Analyze constraints 6 and 1 together
+-------------------------------------------------------------------
+
+Constraint 6: Exactly 2 presentations between Anderson and Ivanov means they are 3 slots apart.
+Constraint 1: Ivanov before Anderson, not consecutive.
+
+Possible positions:
+- Ivanov at slot 1 (9:00 AM), Anderson at slot 4 (3:30 PM), OR
+- Ivanov at slot 2 (10:30 AM), Anderson at slot 5 (4:30 PM)
+
+Both options satisfy constraints 1 and 6.
+Constraint 5: Anderson in afternoon - both options satisfy this (slots 4 and 5 are afternoon).
+
+-------------------------------------------------------------------
+STEP 2: Apply constraints 3 and 7
+-------------------------------------------------------------------
+
+Constraint 7: Evans is in the morning (before 1:00 PM)
+- Evans can only be at slot 1 (9:00 AM) or slot 2 (10:30 AM)
+
+Constraint 3: Hughes presents exactly 2 time slots after Evans
+- If Evans at slot 1 → Hughes at slot 3 (1:30 PM)
+- If Evans at slot 2 → Hughes at slot 4 (3:30 PM)
+
+-------------------------------------------------------------------
+STEP 3: Test Case 1 - Ivanov at slot 1, Anderson at slot 4
+-------------------------------------------------------------------
+
+If Ivanov is at slot 1 (9:00 AM) and Anderson at slot 4 (3:30 PM):
+
+Constraint 4: Slot 2 (10:30 AM) needs someone with vowel-starting name.
+- Names with vowels: Anderson, Ivanov, Evans
+- Ivanov is at slot 1
+- Anderson is at slot 4
+- Therefore, Evans must be at slot 2 (10:30 AM)
+
+From constraint 3: If Evans at slot 2 → Hughes at slot 4
+But Anderson is already at slot 4!
+
+CONTRADICTION - Case 1 is INVALID.
+
+-------------------------------------------------------------------
+STEP 4: Test Case 2 - Ivanov at slot 2, Anderson at slot 5
+-------------------------------------------------------------------
+
+If Ivanov is at slot 2 (10:30 AM) and Anderson at slot 5 (4:30 PM):
+
+Constraint 4: Slot 2 (10:30 AM) needs someone with vowel-starting name.
+- Ivanov starts with "I" (a vowel) ✓
+
+Constraint 7: Evans in the morning (slot 1 or 2)
+- Slot 2 is occupied by Ivanov
+- Therefore, Evans must be at slot 1 (9:00 AM)
+
+Constraint 3: If Evans at slot 1 → Hughes at slot 3 (1:30 PM)
+
+Current assignments:
+- Slot 1 (9:00 AM): Dr. Evans
+- Slot 2 (10:30 AM): Dr. Ivanov
+- Slot 3 (1:30 PM): Dr. Hughes
+- Slot 4 (3:30 PM): ?
+- Slot 5 (4:30 PM): Dr. Anderson
+
+Remaining researcher: Dr. Green → must be at slot 4 (3:30 PM)
+
+Constraint 2 check: Dr. Green cannot present at 4:30 or 1:30
+- Green is at 3:30 PM ✓
+
+-------------------------------------------------------------------
+VERIFICATION OF ALL CONSTRAINTS
+-------------------------------------------------------------------
+
+1. Ivanov before Anderson, not consecutive:
+   ✓ Ivanov at slot 2, Anderson at slot 5 (3 slots apart)
+
+2. Green not at 4:30 or 1:30:
+   ✓ Green at slot 4 (3:30 PM)
+
+3. Hughes exactly 2 slots after Evans:
+   ✓ Evans at slot 1, Hughes at slot 3 (slots 1→2→3, two positions later)
+
+4. 10:30 slot has vowel-starting name:
+   ✓ Ivanov (starts with "I")
+
+5. Anderson in afternoon:
+   ✓ Anderson at 4:30 PM
+
+6. Exactly 2 presentations between Anderson and Ivanov:
+   ✓ Ivanov at slot 2, Anderson at slot 5 (slots 3 and 4 are between them)
+
+7. Evans in morning:
+   ✓ Evans at 9:00 AM
+
+All constraints satisfied!
+
+=================================================================
+FINAL ANSWER - COMPLETE SCHEDULE
+=================================================================
+
+9:00 AM  - Dr. Evans
+10:30 AM - Dr. Ivanov
+1:30 PM  - Dr. Hughes
+3:30 PM  - Dr. Green
+4:30 PM  - Dr. Anderson
+
+=================================================================
