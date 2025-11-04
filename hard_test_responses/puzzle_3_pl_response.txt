@@ -1,0 +1,104 @@
+I'll solve this Polish constraint satisfaction puzzle systematically.
+
+First, let me organize the information:
+
+## Informacje podstawowe:
+- **Naukowcy:** Nelson, Fischer, Evans, Ivanov, Davis, Chen, Lee
+- **Przedziały czasowe:** 8:30, 9:30, 11:00, 2:00, 2:30, 3:00, 4:00
+
+Uporządkujmy przedziały chronologicznie jako pozycje 1-7:
+1. 8:30
+2. 9:30
+3. 11:00
+4. 2:00
+5. 2:30
+6. 3:00
+7. 4:00
+
+Pierwsza połowa: pozycje 1-3 (8:30, 9:30, 11:00)
+Druga połowa: pozycje 4-7 (2:00, 2:30, 3:00, 4:00)
+
+## Analiza krok po kroku:
+
+### Krok 1: Kluczowe ograniczenia pozycyjne
+
+Z ograniczeń 2, 3, 11:
+- **Lee:** pierwsza połowa (pozycje 1-3)
+- **Evans:** pierwsza połowa (pozycje 1-3)
+- **Ivanov:** druga połowa (pozycje 4-7)
+
+### Krok 2: Pary kolejnych prezentacji
+
+Z ograniczenia 9: **Nelson → Lee** (kolejne przedziały)
+Ponieważ Lee jest w pierwszej połowie, możliwe pary:
+- Nelson na pozycji 1, Lee na pozycji 2
+- Nelson na pozycji 2, Lee na pozycji 3
+
+Z ograniczenia 4: **Chen → Fischer** (kolejne przedziały)
+
+### Krok 3: Testowanie Case A (Nelson=1, Lee=2)
+
+Jeśli Nelson na pozycji 1, Lee na pozycji 2:
+- Evans musi być na pozycji 3 (jedyna pozostała w pierwszej połowie)
+
+Z ograniczenia 10: Ivanov i Nelson muszą być oddaleni o ≥4 pozycje
+- Nelson na 1 → Ivanov musi być na 5, 6, lub 7
+
+Z ograniczenia 7: Chen nie może być na pozycji 2 (9:30) lub 5 (2:30)
+Z ograniczenia 6: Chen i Nelson muszą być oddaleni o ≥3 pozycje
+- Nelson na 1 → Chen musi być na 4, 6, lub 7 (wykluczając 2 i 5)
+
+Ponieważ Chen → Fischer są kolejne:
+- **Chen na 4, Fischer na 5** jest możliwe
+
+Sprawdzam ograniczenie 8: Fischer i Nelson oddaleni o ≥3
+- Fischer na 5, Nelson na 1: odległość = 4 ✓
+
+Z ograniczenia 12: Chen i Ivanov nie mogą być sąsiednie
+- Chen na 4 → Ivanov nie może być na 3 lub 5
+- Ivanov może być na 6 lub 7
+
+Jeśli **Ivanov na 6**:
+- Pozostaje tylko Davis na pozycji 7
+
+Sprawdzam ograniczenie 1: Davis nie może być na 1 (8:30) lub 6 (3:00)
+- Davis na 7 (4:00) ✓
+
+### Krok 4: Weryfikacja wszystkich ograniczeń
+
+Proponowane rozwiązanie:
+1. 8:30 → **Nelson**
+2. 9:30 → **Lee**
+3. 11:00 → **Evans**
+4. 2:00 → **Chen**
+5. 2:30 → **Fischer**
+6. 3:00 → **Ivanov**
+7. 4:00 → **Davis**
+
+Sprawdzenie wszystkich ograniczeń:
+1. Davis na 4:00 (nie 8:30, nie 3:00) ✓
+2. Lee na 9:30 (pierwsza połowa) ✓
+3. Evans na 11:00 (pierwsza połowa) ✓
+4. Chen→Fischer (2:00→2:30, kolejne) ✓
+5. Evans (poz. 3) i Ivanov (poz. 6): odległość 3, nie sąsiednie ✓
+6. Chen (poz. 4) i Nelson (poz. 1): odległość 3 ✓
+7. Chen na 2:00 (nie 9:30, nie 2:30) ✓
+8. Fischer (poz. 5) i Nelson (poz. 1): odległość 4 ✓
+9. Nelson→Lee (8:30→9:30, kolejne) ✓
+10. Ivanov (poz. 6) i Nelson (poz. 1): odległość 5 ✓
+11. Ivanov na 3:00 (druga połowa) ✓
+12. Chen (poz. 4) i Ivanov (poz. 6): odległość 2, nie sąsiednie ✓
+
+## OSTATECZNA ODPOWIEDŹ:
+
+| Przedział czasowy | Naukowiec |
+|-------------------|-----------|
+| 8:30 | **Dr. Nelson** |
+| 9:30 | **Dr. Lee** |
+| 11:00 | **Dr. Evans** |
+| 2:00 | **Dr. Chen** |
+| 2:30 | **Dr. Fischer** |
+| 3:00 | **Dr. Ivanov** |
+| 4:00 | **Dr. Davis** |
+
+Wszystkie ograniczenia zostały spełnione.

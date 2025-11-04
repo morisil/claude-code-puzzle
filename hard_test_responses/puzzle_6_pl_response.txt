@@ -1,0 +1,114 @@
+Perfect! I found that Test 27 is Puzzle 6 in Polish. Now let me solve this puzzle systematically.
+
+## ANALIZA KROK PO KROKU
+
+**Naukowcy:** Dr. Evans, Dr. Davis, Dr. Green, Dr. Lee, Dr. O'Brien, Dr. Anderson, Dr. Jones
+
+**Przedziały czasowe (w kolejności):**
+1. 8:30 (rano)
+2. 11:30 (rano)
+3. 1:00 (po południu)
+4. 2:00 (po południu)
+5. 3:30 (po południu)
+6. 5:00 (po południu)
+7. 5:30 (po południu)
+
+### Krok 1: Analiza kluczowych ograniczeń relacyjnych
+
+**Z ograniczenia 10:** Dr. Anderson prezentuje bezpośrednio po Dr. Jones.
+- Jones jest na pozycji i → Anderson jest na pozycji i+1
+
+**Z ograniczenia 6:** Dr. Anderson prezentuje dokładnie 3 przedziały po Dr. O'Brien.
+- O'Brien jest na pozycji i → Anderson jest na pozycji i+3
+
+**Łącząc ograniczenia 6 i 10:**
+- Jeśli O'Brien jest na pozycji i, to Anderson jest na i+3
+- Jeśli Anderson jest na i+3, to Jones jest na i+2
+- **Wzorzec: O'Brien (i), Jones (i+2), Anderson (i+3)**
+
+### Krok 2: Określenie pozycji O'Brien
+
+**Z ograniczenia 1:** Dr. O'Brien prezentuje w pierwszej połowie harmonogramu.
+- Pierwsza połowa = pozycje 1-3 (8:30, 11:30, 1:00)
+
+**Możliwe przypadki:**
+- **Przypadek A:** O'Brien na 1 → Jones na 3 → Anderson na 4
+- **Przypadek B:** O'Brien na 2 → Jones na 4 → Anderson na 5
+- **Przypadek C:** O'Brien na 3 → Jones na 5 → Anderson na 6
+
+### Krok 3: Testowanie Przypadku A (O'Brien na pozycji 1)
+
+- O'Brien: pozycja 1 (8:30)
+- Jones: pozycja 3 (1:00)
+- Anderson: pozycja 4 (2:00)
+
+**Z ograniczenia 8:** Przedział 11:30 (pozycja 2) zajęty przez osobę z nazwiskiem zaczynającym się od samogłoski.
+- Samogłoski: **E**vans, **A**nderson, **O**'Brien
+- Anderson jest na 4, O'Brien na 1 → pozycja 2 musi być **Evans**
+
+**Z ograniczenia 7:** O'Brien musi prezentować przed Evans, ale nie w kolejnych przedziałach.
+- O'Brien na 1, Evans na 2 → **SĄ KOLEJNE** ❌
+
+**Przypadek A odrzucony**
+
+### Krok 4: Testowanie Przypadku B (O'Brien na pozycji 2)
+
+- O'Brien: pozycja 2 (11:30)
+- Jones: pozycja 4 (2:00)
+- Anderson: pozycja 5 (3:30)
+
+**Ograniczenie 8:** Pozycja 2 (11:30) = osoba z samogłoską → O'Brien ✓
+
+**Z ograniczenia 4:** Przedział 5:00 (pozycja 6) zajęty przez osobę z nazwiskiem od samogłoski.
+- O'Brien na 2, Anderson na 5 → pozycja 6 musi być **Evans**
+- Evans: pozycja 6 (5:00)
+
+**Sprawdzanie ograniczenia 3:** Evans nie może być na 8:30 ani 3:30.
+- Evans na 5:00 ✓
+
+**Sprawdzanie ograniczenia 7:** O'Brien przed Evans, nie kolejne.
+- O'Brien na 2, Evans na 6 → nie kolejne ✓
+
+**Z ograniczenia 2:** Evans i Lee muszą być oddalone o co najmniej 4 przedziały.
+- Evans na 6 → Lee musi być na pozycji ≤2 lub ≥10 (niemożliwe)
+- Lee musi być na pozycji 1 lub 2
+- Pozycja 2 = O'Brien → **Lee musi być na pozycji 1**
+- Lee: pozycja 1 (8:30)
+
+**Pozostali naukowcy:** Davis, Green
+**Pozostałe pozycje:** 3, 7
+
+**Z ograniczenia 5:** Dr. Davis prezentuje po południu (1:00 PM lub później).
+- Pozycje 3-7 są po południu → Davis może być na 3 lub 7
+
+**Z ograniczenia 9:** Dr. Green nie może być na 5:30 ani 5:00.
+- Green nie może być na 6 lub 7
+- Pozycja 6 = Evans, więc Green nie może być na 7
+- **Green musi być na pozycji 3**
+- **Davis musi być na pozycji 7**
+
+### OSTATECZNE ROZWIĄZANIE:
+
+**Kompletny harmonogram:**
+- **8:30** → **Dr. Lee**
+- **11:30** → **Dr. O'Brien**
+- **1:00** → **Dr. Green**
+- **2:00** → **Dr. Jones**
+- **3:30** → **Dr. Anderson**
+- **5:00** → **Dr. Evans**
+- **5:30** → **Dr. Davis**
+
+### WERYFIKACJA WSZYSTKICH OGRANICZEŃ:
+
+1. ✓ O'Brien w pierwszej połowie (pozycja 2)
+2. ✓ Evans i Lee oddalone o 5 przedziałów (≥4)
+3. ✓ Evans nie na 8:30 ani 3:30 (jest na 5:00)
+4. ✓ 5:00 zajęte przez Evans (samogłoska E)
+5. ✓ Davis po południu (5:30)
+6. ✓ Anderson 3 przedziały po O'Brien (5-2=3)
+7. ✓ O'Brien przed Evans (2<6), nie kolejne
+8. ✓ 11:30 zajęte przez O'Brien (samogłoska O)
+9. ✓ Green nie na 5:30 ani 5:00 (jest na 1:00)
+10. ✓ Anderson bezpośrednio po Jones (pozycje 4→5)
+
+**Wszystkie ograniczenia są spełnione!** ✓

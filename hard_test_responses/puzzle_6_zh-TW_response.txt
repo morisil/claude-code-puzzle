@@ -1,0 +1,89 @@
+I'll solve this constraint satisfaction puzzle systematically by analyzing each constraint and finding the valid schedule.
+
+## Step 1: Identify Key Information
+
+**Researchers:** Evans, Davis, Green, Lee, O'Brien, Anderson, Jones
+
+**Time Slots (ordered):**
+1. 8:30 AM
+2. 11:30 AM
+3. 1:00 PM
+4. 2:00 PM
+5. 3:30 PM
+6. 5:00 PM
+7. 5:30 PM
+
+**Names starting with vowels:** Evans (E), O'Brien (O), Anderson (A)
+
+## Step 2: Analyze Critical Constraints
+
+**From constraints 6 and 10:**
+- Constraint 6: Anderson is exactly 3 slots after O'Brien
+- Constraint 10: Anderson is immediately after Jones (consecutive)
+
+This creates a fixed pattern: **O'Brien → (+2 slots) → Jones → Anderson**
+
+**Possible positions for O'Brien (considering constraint 1 - first half):**
+- Slot 1: O'Brien → slot 3: Jones → slot 4: Anderson
+- Slot 2: O'Brien → slot 4: Jones → slot 5: Anderson
+- Slot 3: O'Brien → slot 5: Jones → slot 6: Anderson
+- Slot 4: Would be borderline/second half
+
+## Step 3: Test Each Case
+
+**Testing Slot 2 for O'Brien:**
+- Slot 2 (11:30): O'Brien
+- Slot 4 (2:00 PM): Jones
+- Slot 5 (3:30 PM): Anderson
+
+**Constraint 8:** 11:30 must be someone with vowel name → O'Brien ✓
+
+**Constraint 4:** 5:00 PM (slot 6) must be vowel name → Must be Evans (only vowel name left) ✓
+
+**Constraint 7:** O'Brien before Evans, not consecutive → O'Brien at slot 2, Evans at slot 6 (4 slots apart) ✓
+
+**Constraint 2:** Evans and Lee must be at least 4 slots apart
+- Evans at slot 6 → Lee must be at slot ≤2 or ≥10
+- Since slot 2 is taken by O'Brien → Lee must be at slot 1 ✓
+
+**Remaining researchers:** Davis, Green for slots 3 and 7
+
+**Constraint 9:** Green cannot be at 5:30 or 5:00 → Green must be at slot 3 ✓
+
+**Constraint 5:** Davis presents afternoon (≥1:00 PM) → Davis at slot 7 ✓
+
+## Step 4: Verify Complete Solution
+
+**Final Schedule:**
+- Slot 1 (8:30 AM): Dr. Lee
+- Slot 2 (11:30 AM): Dr. O'Brien
+- Slot 3 (1:00 PM): Dr. Green
+- Slot 4 (2:00 PM): Dr. Jones
+- Slot 5 (3:30 PM): Dr. Anderson
+- Slot 6 (5:00 PM): Dr. Evans
+- Slot 7 (5:30 PM): Dr. Davis
+
+## Step 5: Constraint Verification
+
+1. ✓ O'Brien in first half (slot 2)
+2. ✓ Evans (slot 6) and Lee (slot 1) are 5 slots apart (≥4)
+3. ✓ Evans not at 8:30 or 3:30 (at 5:00 PM)
+4. ✓ 5:00 PM has Evans (vowel name)
+5. ✓ Davis presents afternoon (5:30 PM)
+6. ✓ Anderson (slot 5) exactly 3 slots after O'Brien (slot 2)
+7. ✓ O'Brien (slot 2) before Evans (slot 6), not consecutive
+8. ✓ 11:30 has O'Brien (vowel name)
+9. ✓ Green not at 5:30 or 5:00 (at 1:00 PM)
+10. ✓ Anderson (slot 5) immediately after Jones (slot 4)
+
+## Final Answer
+
+| 時間段 | 研究人員 |
+|--------|----------|
+| 上午8:30 | Dr. Lee |
+| 上午11:30 | Dr. O'Brien |
+| 下午1:00 | Dr. Green |
+| 下午2:00 | Dr. Jones |
+| 下午3:30 | Dr. Anderson |
+| 下午5:00 | Dr. Evans |
+| 下午5:30 | Dr. Davis |

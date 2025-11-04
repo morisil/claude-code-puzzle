@@ -1,0 +1,61 @@
+## **ROZWIĄZANIE - KOMPLETNY HARMONOGRAM:**
+
+| Przedział czasowy | Naukowiec |
+|-------------------|-----------|
+| **8:00** | **Dr. Green** |
+| **11:00** | **Dr. Hughes** |
+| **1:00** | **Dr. Anderson** |
+| **2:30** | **Dr. Kumar** |
+| **4:00** | **Dr. Davis** |
+| **4:30** | **Dr. O'Brien** |
+| **5:00** | **Dr. Evans** |
+
+---
+
+## **PROCES ROZUMOWANIA:**
+
+### Krok 1: Identyfikacja nazwisk z samogłoskami
+- **Anderson** (A), **Evans** (E), **O'Brien** (O) - rozpoczynają się od samogłosek
+- Kumar, Davis, Hughes, Green - rozpoczynają się od spółgłosek
+
+### Krok 2: Zastosowanie ograniczeń dla samogłosek (1, 2, 6, 9)
+Przedziały 1:00, 4:30 i 5:00 muszą być zajęte przez Anderson, Evans i O'Brien.
+
+### Krok 3: Ograniczenie 7 + 10
+- O'Brien prezentuje 4 przedziały po Hughes
+- O'Brien nie może być o 5:00 ani 11:00
+- **Wynik: Hughes o 11:00 (przedział 2), O'Brien o 4:30 (przedział 6)**
+
+### Krok 4: Ograniczenie 5
+- Evans i Hughes muszą być oddalone o ≥4 przedziały
+- Hughes w przedziale 2 → Evans w przedziale 6 lub 7
+- Przedział 6 zajęty przez O'Brien
+- **Wynik: Evans o 5:00 (przedział 7)**
+
+### Krok 5: Anderson
+- **Anderson o 1:00 (przedział 3)** - jedyne pozostałe nazwisko z samogłoską
+
+### Krok 6: Ograniczenie 8
+- Green przed Kumar, ale nie kolejno
+- Pozostali: Kumar, Davis, Green w przedziałach 1, 4, 5
+- **Wynik: Green (1), Kumar (4), Davis (5)**
+
+### Krok 7: Weryfikacja ograniczenia 3
+- Między 1:00 (Anderson) a Evans (5:00) znajduje się Davis (4:00) ✓
+
+---
+
+## **WERYFIKACJA WSZYSTKICH OGRANICZEŃ:**
+
+✓ **1.** 5:00 = Evans (samogłoska)
+✓ **2.** 4:30 = O'Brien (samogłoska)
+✓ **3.** Davis między 1:00 i Evans
+✓ **4.** O'Brien w drugiej połowie harmonogramu
+✓ **5.** Evans i Hughes oddalone o 5 przedziałów (≥4)
+✓ **6.** 4:30 = O'Brien (samogłoska)
+✓ **7.** O'Brien 4 przedziały po Hughes
+✓ **8.** Green przed Kumar, nie kolejno
+✓ **9.** 1:00 = Anderson (samogłoska)
+✓ **10.** O'Brien o 4:30 (nie 5:00 ani 11:00)
+
+**Wszystkie ograniczenia zostały spełnione!**

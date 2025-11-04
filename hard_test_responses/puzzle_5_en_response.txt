@@ -1,0 +1,97 @@
+I'll solve this constraint satisfaction puzzle systematically by analyzing the constraints and narrowing down possibilities.
+
+## Initial Setup
+
+**Researchers:** Dr. Kumar, Dr. Anderson, Dr. Davis, Dr. O'Brien, Dr. Evans, Dr. Hughes, Dr. Green
+
+**Time slots (ordered):**
+1. 8:00 AM
+2. 11:00 AM
+3. 1:00 PM
+4. 2:30 PM
+5. 4:00 PM
+6. 4:30 PM
+7. 5:00 PM
+
+**Names starting with vowels:** Dr. Anderson, Dr. Evans, Dr. O'Brien
+
+## Step-by-Step Solution
+
+### Step 1: Analyze the most restrictive constraint
+
+**Constraint 7:** Dr. O'Brien presents exactly 4 time slots after Dr. Hughes.
+
+Possible combinations:
+- Hughes at slot 1 (8:00) → O'Brien at slot 5 (4:00)
+- Hughes at slot 2 (11:00) → O'Brien at slot 6 (4:30)
+- Hughes at slot 3 (1:00) → O'Brien at slot 7 (5:00)
+
+**Constraint 10:** Dr. O'Brien cannot present at 5:00 or 11:00.
+
+This eliminates the third option. We have two possibilities left.
+
+### Step 2: Apply vowel constraints
+
+**Constraints 1, 2, 9:** Slots at 5:00 PM, 4:30 PM, and 1:00 PM must have vowel-name researchers.
+
+**Case A:** Hughes at slot 1, O'Brien at slot 5
+- Slot 3, 6, and 7 need vowel names
+- We only have Anderson and Evans left (O'Brien is at slot 5)
+- Need 3 people but only have 2 → **IMPOSSIBLE**
+
+**Case B:** Hughes at slot 2, O'Brien at slot 6
+- Slot 3 and 7 need vowel names
+- We have Anderson and Evans available
+- This works! ✓
+
+### Step 3: Place Evans using constraint 5
+
+**Constraint 5:** Dr. Evans and Dr. Hughes must be at least 4 time slots apart.
+
+Hughes is at slot 2. Evans must be at least 4 slots away: |position - 2| ≥ 4
+- Valid positions: slot 6 or 7
+
+Since slot 6 has O'Brien, **Evans must be at slot 7**.
+
+This means **Anderson is at slot 3**.
+
+### Step 4: Place Davis using constraint 3
+
+**Constraint 3:** There are exactly 1 presentation between Dr. Evans and Dr. Davis.
+
+Evans is at slot 7. With 1 slot between them: **Davis is at slot 5** (positions 7 and 5 with slot 6 between them).
+
+### Step 5: Place remaining researchers
+
+Remaining: Kumar and Green
+Remaining slots: 1 and 4
+
+**Constraint 8:** Dr. Green must present before Dr. Kumar, but not in consecutive time slots.
+
+- Green at slot 1, Kumar at slot 4: Green before Kumar ✓, slots 2 and 3 are between them (not consecutive) ✓
+
+## Final Answer
+
+**Complete Schedule:**
+- **8:00 AM:** Dr. Green
+- **11:00 AM:** Dr. Hughes
+- **1:00 PM:** Dr. Anderson
+- **2:30 PM:** Dr. Kumar
+- **4:00 PM:** Dr. Davis
+- **4:30 PM:** Dr. O'Brien
+- **5:00 PM:** Dr. Evans
+
+## Verification of All Constraints
+
+1. 5:00 slot has vowel name: Evans ✓
+2. 4:30 slot has vowel name: O'Brien ✓
+3. 1 slot between Evans (7) and Davis (5): slot 6 between them ✓
+4. O'Brien in second half: slot 6 ✓
+5. Evans and Hughes at least 4 apart: |7-2| = 5 ✓
+6. 4:30 slot has vowel name: O'Brien ✓
+7. O'Brien 4 slots after Hughes: 6-2 = 4 ✓
+8. Green before Kumar, not consecutive: slot 1 < slot 4, slots 2&3 between ✓
+9. 1:00 slot has vowel name: Anderson ✓
+10. O'Brien not at 5:00 or 11:00: at 4:30 ✓
+
+All constraints satisfied! ✓

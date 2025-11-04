@@ -1,0 +1,374 @@
+{
+  "statistics": {
+    "overall": {
+      "mean": 20.408163265306122,
+      "median": 0.0,
+      "stdev": 32.75494309834919,
+      "min": 0.0,
+      "max": 85.71428571428571,
+      "n": 21
+    },
+    "by_language": {
+      "en": {
+        "language_name": "English",
+        "mean": 34.285714285714285,
+        "median": 28.57142857142857,
+        "stdev": 37.25258517258656,
+        "min": 0.0,
+        "max": 85.71428571428571,
+        "n": 5
+      },
+      "pl": {
+        "language_name": "Polish",
+        "mean": 7.142857142857142,
+        "median": 0.0,
+        "stdev": 14.285714285714285,
+        "min": 0.0,
+        "max": 28.57142857142857,
+        "n": 4
+      },
+      "zh-CN": {
+        "language_name": "Simplified Chinese",
+        "mean": 21.428571428571427,
+        "median": 0.0,
+        "stdev": 42.857142857142854,
+        "min": 0.0,
+        "max": 85.71428571428571,
+        "n": 4
+      },
+      "zh-TW": {
+        "language_name": "Traditional Chinese",
+        "mean": 35.71428571428571,
+        "median": 28.57142857142857,
+        "stdev": 42.857142857142854,
+        "min": 0.0,
+        "max": 85.71428571428571,
+        "n": 4
+      },
+      "ko": {
+        "language_name": "Korean",
+        "mean": 0.0,
+        "median": 0.0,
+        "stdev": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 4
+      }
+    },
+    "by_puzzle": {
+      "1": {
+        "en": 28.57142857142857
+      },
+      "3": {
+        "en": 57.14285714285714,
+        "pl": 0.0,
+        "zh-CN": 0.0,
+        "zh-TW": 0.0,
+        "ko": 0.0
+      },
+      "4": {
+        "en": 85.71428571428571,
+        "pl": 28.57142857142857,
+        "zh-CN": 85.71428571428571,
+        "zh-TW": 85.71428571428571,
+        "ko": 0.0
+      },
+      "5": {
+        "en": 0.0,
+        "pl": 0.0,
+        "zh-CN": 0.0,
+        "zh-TW": 57.14285714285714,
+        "ko": 0.0
+      },
+      "6": {
+        "en": 0.0,
+        "pl": 0.0,
+        "zh-CN": 0.0,
+        "zh-TW": 0.0,
+        "ko": 0.0
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "test_id": 1,
+      "puzzle_id": 1,
+      "language_code": "en",
+      "language_name": "English",
+      "correctness": 28.57142857142857,
+      "word_count": 156,
+      "has_verification": false,
+      "extracted_schedule": {
+        "10:00": "Dr. O'Brien",
+        "10:30": "Dr. Fischer",
+        "9:00": "Dr. Brown",
+        "9:30": "Dr. Ivanov",
+        "1:00": "Dr. Nelson",
+        "2:30": "Dr. Martinez",
+        "5:30": "Dr. Kumar"
+      }
+    },
+    {
+      "test_id": 11,
+      "puzzle_id": 3,
+      "language_code": "en",
+      "language_name": "English",
+      "correctness": 57.14285714285714,
+      "word_count": 836,
+      "has_verification": true,
+      "extracted_schedule": {
+        "11:00": "Dr. Evans",
+        "8:30": "Dr. Nelson",
+        "9:30": "Dr. Lee",
+        "2:00": "Dr. Chen",
+        "2:30": "Dr. Fischer",
+        "3:00": "Dr. Ivanov",
+        "4:00": "Dr. Davis"
+      }
+    },
+    {
+      "test_id": 12,
+      "puzzle_id": 3,
+      "language_code": "pl",
+      "language_name": "Polish",
+      "correctness": 0.0,
+      "word_count": 539,
+      "has_verification": false,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 13,
+      "puzzle_id": 3,
+      "language_code": "zh-CN",
+      "language_name": "Simplified Chinese",
+      "correctness": 0.0,
+      "word_count": 1864,
+      "has_verification": false,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 14,
+      "puzzle_id": 3,
+      "language_code": "zh-TW",
+      "language_name": "Traditional Chinese",
+      "correctness": 0.0,
+      "word_count": 1248,
+      "has_verification": true,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 15,
+      "puzzle_id": 3,
+      "language_code": "ko",
+      "language_name": "Korean",
+      "correctness": 0.0,
+      "word_count": 717,
+      "has_verification": false,
+      "extracted_schedule": {
+        "11:00": "Dr. Lee",
+        "8:30": "Dr. Davis",
+        "9:30": "Dr. Nelson",
+        "2:00": "Dr. Evans",
+        "2:30": "Dr. Chen",
+        "3:00": "Dr. Fischer",
+        "4:00": "Dr. Ivanov"
+      }
+    },
+    {
+      "test_id": 16,
+      "puzzle_id": 4,
+      "language_code": "en",
+      "language_name": "English",
+      "correctness": 85.71428571428571,
+      "word_count": 428,
+      "has_verification": false,
+      "extracted_schedule": {
+        "10:00": "Dr. Anderson",
+        "11:30": "Dr. Evans",
+        "8:30": "Dr. Jones",
+        "9:30": "Dr. Quinn",
+        "1:30": "Dr. Evans",
+        "2:00": "Dr. Lee",
+        "2:30": "Dr. Martinez"
+      }
+    },
+    {
+      "test_id": 17,
+      "puzzle_id": 4,
+      "language_code": "pl",
+      "language_name": "Polish",
+      "correctness": 28.57142857142857,
+      "word_count": 468,
+      "has_verification": false,
+      "extracted_schedule": {
+        "10:00": "Dr. Anderson",
+        "11:30": "Dr. Evans",
+        "8:30": "Dr. Fischer",
+        "9:30": "Dr. Jones",
+        "1:30": "Dr. Evans"
+      }
+    },
+    {
+      "test_id": 18,
+      "puzzle_id": 4,
+      "language_code": "zh-CN",
+      "language_name": "Simplified Chinese",
+      "correctness": 85.71428571428571,
+      "word_count": 1283,
+      "has_verification": true,
+      "extracted_schedule": {
+        "10:00": "Dr. Anderson",
+        "11:30": "Dr. Evans",
+        "8:30": "Dr. Jones",
+        "9:30": "Dr. Quinn",
+        "1:30": "Dr. Evans",
+        "2:00": "Dr. Lee",
+        "2:30": "Dr. Martinez"
+      }
+    },
+    {
+      "test_id": 19,
+      "puzzle_id": 4,
+      "language_code": "zh-TW",
+      "language_name": "Traditional Chinese",
+      "correctness": 85.71428571428571,
+      "word_count": 2184,
+      "has_verification": true,
+      "extracted_schedule": {
+        "10:00": "Dr. Anderson",
+        "11:30": "Dr. Evans",
+        "8:30": "Dr. Jones",
+        "9:30": "Dr. Quinn",
+        "1:30": "Dr. Evans",
+        "2:00": "Dr. Lee",
+        "2:30": "Dr. Martinez"
+      }
+    },
+    {
+      "test_id": 20,
+      "puzzle_id": 4,
+      "language_code": "ko",
+      "language_name": "Korean",
+      "correctness": 0.0,
+      "word_count": 1297,
+      "has_verification": true,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 21,
+      "puzzle_id": 5,
+      "language_code": "en",
+      "language_name": "English",
+      "correctness": 0.0,
+      "word_count": 562,
+      "has_verification": false,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 22,
+      "puzzle_id": 5,
+      "language_code": "pl",
+      "language_name": "Polish",
+      "correctness": 0.0,
+      "word_count": 297,
+      "has_verification": false,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 23,
+      "puzzle_id": 5,
+      "language_code": "zh-CN",
+      "language_name": "Simplified Chinese",
+      "correctness": 0.0,
+      "word_count": 1437,
+      "has_verification": true,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 24,
+      "puzzle_id": 5,
+      "language_code": "zh-TW",
+      "language_name": "Traditional Chinese",
+      "correctness": 57.14285714285714,
+      "word_count": 3165,
+      "has_verification": false,
+      "extracted_schedule": {
+        "11:00": "Dr. Hughes",
+        "8:00": "Dr. Green",
+        "1:00": "Dr. Hughes",
+        "2:30": "Dr. Kumar",
+        "4:00": "Dr. Davis",
+        "4:30": "Dr. O'Brien",
+        "5:00": "Dr. Evans"
+      }
+    },
+    {
+      "test_id": 25,
+      "puzzle_id": 5,
+      "language_code": "ko",
+      "language_name": "Korean",
+      "correctness": 0.0,
+      "word_count": 1767,
+      "has_verification": true,
+      "extracted_schedule": {
+        "11:00": "Dr. Hughes",
+        "8:00": "Dr. Green",
+        "1:00": "Dr. Hughes",
+        "2:30": "Dr. Davis",
+        "4:00": "Dr. Kumar",
+        "4:30": "Dr. Evans",
+        "5:00": "Dr. O'Brien"
+      }
+    },
+    {
+      "test_id": 26,
+      "puzzle_id": 6,
+      "language_code": "en",
+      "language_name": "English",
+      "correctness": 0.0,
+      "word_count": 507,
+      "has_verification": true,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 27,
+      "puzzle_id": 6,
+      "language_code": "pl",
+      "language_name": "Polish",
+      "correctness": 0.0,
+      "word_count": 686,
+      "has_verification": false,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 28,
+      "puzzle_id": 6,
+      "language_code": "zh-CN",
+      "language_name": "Simplified Chinese",
+      "correctness": 0.0,
+      "word_count": 1672,
+      "has_verification": false,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 29,
+      "puzzle_id": 6,
+      "language_code": "zh-TW",
+      "language_name": "Traditional Chinese",
+      "correctness": 0.0,
+      "word_count": 1614,
+      "has_verification": true,
+      "extracted_schedule": {}
+    },
+    {
+      "test_id": 30,
+      "puzzle_id": 6,
+      "language_code": "ko",
+      "language_name": "Korean",
+      "correctness": 0.0,
+      "word_count": 701,
+      "has_verification": false,
+      "extracted_schedule": {}
+    }
+  ]
+}
