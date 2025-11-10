@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Chinese character "中" (zhōng - middle/center) -->
+  <g fill="#000000">
+    <!-- Vertical stroke -->
+    <rect x="190" y="80" width="20" height="240"/>
+    <!-- Top horizontal stroke -->
+    <rect x="100" y="120" width="200" height="20"/>
+    <!-- Middle box top -->
+    <rect x="130" y="180" width="140" height="15"/>
+    <!-- Middle box left -->
+    <rect x="130" y="180" width="15" height="80"/>
+    <!-- Middle box right -->
+    <rect x="255" y="180" width="15" height="80"/>
+    <!-- Middle box bottom -->
+    <rect x="130" y="260" width="140" height="15"/>
+  </g>
+</svg>

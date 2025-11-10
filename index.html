@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Morph Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SVG Morph Studio</h1>
+            <p>Upload two SVG files and create smooth morphing animations</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-box">
+                <label for="svg1-upload" class="upload-label">
+                    <div class="upload-icon">📁</div>
+                    <span>Upload First SVG</span>
+                    <input type="file" id="svg1-upload" accept=".svg,image/svg+xml" />
+                </label>
+                <div id="svg1-preview" class="svg-preview"></div>
+                <span class="file-name" id="svg1-name"></span>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="upload-box">
+                <label for="svg2-upload" class="upload-label">
+                    <div class="upload-icon">📁</div>
+                    <span>Upload Second SVG</span>
+                    <input type="file" id="svg2-upload" accept=".svg,image/svg+xml" />
+                </label>
+                <div id="svg2-preview" class="svg-preview"></div>
+                <span class="file-name" id="svg2-name"></span>
+            </div>
+        </div>
+
+        <div class="controls-section">
+            <div class="control-group">
+                <label for="duration">Duration (ms):</label>
+                <input type="range" id="duration" min="100" max="5000" value="2000" step="100" />
+                <span id="duration-value">2000</span>
+            </div>
+
+            <div class="control-group">
+                <label for="easing">Easing Function:</label>
+                <select id="easing">
+                    <option value="linear">Linear</option>
+                    <option value="easeInQuad">Ease In Quad</option>
+                    <option value="easeOutQuad">Ease Out Quad</option>
+                    <option value="easeInOutQuad" selected>Ease In-Out Quad</option>
+                    <option value="easeInCubic">Ease In Cubic</option>
+                    <option value="easeOutCubic">Ease Out Cubic</option>
+                    <option value="easeInOutCubic">Ease In-Out Cubic</option>
+                    <option value="easeInQuart">Ease In Quart</option>
+                    <option value="easeOutQuart">Ease Out Quart</option>
+                    <option value="easeInOutQuart">Ease In-Out Quart</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="loop">Loop Animation:</label>
+                <input type="checkbox" id="loop" />
+            </div>
+
+            <div class="control-group">
+                <label for="reverse">Reverse on Loop:</label>
+                <input type="checkbox" id="reverse" checked />
+            </div>
+
+            <div class="control-group">
+                <label for="color-interpolation">Color Interpolation:</label>
+                <select id="color-interpolation">
+                    <option value="none">None (Keep Target Color)</option>
+                    <option value="linear" selected>Linear</option>
+                    <option value="lab">LAB Color Space</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="max-segment-length">Path Precision:</label>
+                <input type="range" id="max-segment-length" min="1" max="20" value="10" step="1" />
+                <span id="precision-value">10</span>
+            </div>
+        </div>
+
+        <div class="animation-area">
+            <svg id="morph-canvas" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                <g id="morph-group"></g>
+            </svg>
+        </div>
+
+        <div class="playback-controls">
+            <button id="play-btn" disabled>▶ Play</button>
+            <button id="pause-btn" disabled>⏸ Pause</button>
+            <button id="reset-btn" disabled>⏹ Reset</button>
+            <div class="progress-container">
+                <input type="range" id="progress" min="0" max="100" value="0" step="0.1" disabled />
+                <span id="progress-value">0%</span>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <details>
+                <summary>ℹ️ How to Use</summary>
+                <ol>
+                    <li>Upload two SVG files using the upload buttons</li>
+                    <li>Adjust animation parameters using the controls</li>
+                    <li>Click "Play" to start the morphing animation</li>
+                    <li>Use the progress slider to scrub through the animation</li>
+                    <li>Enable "Loop" for continuous animation</li>
+                    <li>Enable "Reverse on Loop" for ping-pong effect</li>
+                </ol>
+                <p><strong>Tips:</strong></p>
+                <ul>
+                    <li>Best results with SVGs that have similar path complexity</li>
+                    <li>LAB color space provides more natural color transitions</li>
+                    <li>Lower path precision = smoother paths but less detail</li>
+                    <li>Higher path precision = more accurate but potentially choppy</li>
+                </ul>
+            </details>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/flubber@0.4.2/build/flubber.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

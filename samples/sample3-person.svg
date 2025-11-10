@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simple person icon with colors -->
+  <!-- Head -->
+  <circle cx="200" cy="100" r="50" fill="#FFE0BD" stroke="#8B6F47" stroke-width="3"/>
+  <!-- Body -->
+  <path d="M200,150 L180,250 L200,250 L220,250 Z" fill="#4A90E2" stroke="#2C5F9E" stroke-width="3"/>
+  <!-- Arms -->
+  <path d="M180,170 L130,200 L140,210 L180,190 Z" fill="#4A90E2" stroke="#2C5F9E" stroke-width="3"/>
+  <path d="M220,170 L270,200 L260,210 L220,190 Z" fill="#4A90E2" stroke="#2C5F9E" stroke-width="3"/>
+  <!-- Legs -->
+  <path d="M180,250 L160,340 L180,345 L195,260 Z" fill="#2C3E50" stroke="#1A252F" stroke-width="3"/>
+  <path d="M220,250 L240,340 L220,345 L205,260 Z" fill="#2C3E50" stroke="#1A252F" stroke-width="3"/>
+</svg>
